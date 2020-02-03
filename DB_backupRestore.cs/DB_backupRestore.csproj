@@ -64,12 +64,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CoreApp, Version=3.0.0.0, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="CoreApp, Version=3.0.0.1, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\DLL\CoreApp.dll</HintPath>
-    </Reference>
-    <Reference Include="RegistrationProcess">
-      <HintPath>..\..\..\RegistrationProcess NEW\RegistrationProcess\bin\x86\Debug\RegistrationProcess.dll</HintPath>
+      <HintPath>..\..\..\IMS\packages\CoreAppLib.1.0.2\lib\CoreApp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">

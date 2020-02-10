@@ -172,7 +172,7 @@ namespace DB_backupRestore.cs
         {
             try
             {
-                DataTable dt = ObjDAL.GetData(DBName + ".dbo.BackupConfig", "IsAutoBackup=1", "ID");
+                DataTable dt = ObjDAL.GetData(DBName + ".dbo.BackupConfig", "IsAutoBackup=1", "BackupID");
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     flowLayoutPanel1.Visible = true;
@@ -269,7 +269,7 @@ namespace DB_backupRestore.cs
                 dateTimePicker2.Value = DateTime.Now;
                 try
                 {
-                    object p = ObjDAL.ExecuteScalar("select Path from " + DBName + ".dbo.BackupConfig with(nolock) where len(Path)>0 and isnull(IsAutoBackup,0)=1 and ID=1");
+                    object p = ObjDAL.ExecuteScalar("select Path from " + DBName + ".dbo.BackupConfig with(nolock) where len(Path)>0 and isnull(IsAutoBackup,0)=1 and BackupID=1");
                     if (Directory.Exists(p.ToString()))
                     {
                         txtBacupPath.Text = p.ToString();
@@ -296,7 +296,7 @@ namespace DB_backupRestore.cs
                         //ObjDAL.UpdateColumnData("Date", SqlDbType.Date, dateTimePicker1.Value);
                         ObjDAL.UpdateColumnData("Date", SqlDbType.Date, dateTimePicker2.Value);
                         ObjDAL.UpdateColumnData("Time", SqlDbType.DateTime, dateTimePicker2.Value);
-                        int a = ObjDAL.UpdateData(DBName + ".dbo.BackupConfig", "ID=1");
+                        int a = ObjDAL.UpdateData(DBName + ".dbo.BackupConfig", "BackupID=1");
                         if (a > 0)
                         {
                             clsUtility.ShowInfoMessage("Backup Configure Successfully.", clsUtility.strProjectTitle);

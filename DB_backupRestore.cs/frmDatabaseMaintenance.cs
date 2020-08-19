@@ -58,11 +58,11 @@ namespace DB_backupRestore.cs
                 {
                     ObjThread.SetLoadingProgressPercent(i, 100);
                 }
-                if (File.Exists(strBackUpPath + @"\" + DatabaseName + ".bak"))
-                {
-                    File.Delete(strBackUpPath + @"\" + DatabaseName + ".bak");
-                }
-                string sqlcmd = "BACKUP database " + DatabaseName + " TO DISK='" + strBackUpPath + @"\" + DatabaseName + ".bak'";
+                //if (File.Exists(strBackUpPath + @"\" + DatabaseName + ".bak"))
+                //{
+                //    File.Delete(strBackUpPath + @"\" + DatabaseName + ".bak");
+                //}
+                string sqlcmd = "BACKUP database " + DatabaseName + " TO DISK='" + strBackUpPath + @"\" + DatabaseName + ".bak' WITH INIT";
                 
                 //added by aamir 26-06-2016
                 //File.Delete(strBackUpPath + @"\" + DatabaseName + ".bak");
@@ -138,7 +138,7 @@ namespace DB_backupRestore.cs
                 {
                     ObjThread.SetLoadingProgressPercent(i, 100);
                 }
-                DataTable dt = ObjDAL.ExecuteSelectStatement("select * from sys.databases WHERE name not in('master','model','msdb','tempdb','ReportServer','ReportServerTempDB')");
+                DataTable dt = ObjDAL.ExecuteSelectStatement("SELECT * FROM sys.databases WHERE name NOT IN('master','model','msdb','tempdb','ReportServer','ReportServerTempDB')");
                 string str = string.Empty;
 
                 if (dt != null)

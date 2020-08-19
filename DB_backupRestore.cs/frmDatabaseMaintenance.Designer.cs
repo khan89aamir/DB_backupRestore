@@ -69,7 +69,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(5, 101);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(332, 115);
+            this.groupBox1.Size = new System.Drawing.Size(332, 136);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Backup Database";
@@ -102,7 +102,7 @@
             this.btnBackup.Enabled = false;
             this.btnBackup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBackup.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBackup.Location = new System.Drawing.Point(243, 80);
+            this.btnBackup.Location = new System.Drawing.Point(243, 83);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.Size = new System.Drawing.Size(84, 29);
             this.btnBackup.TabIndex = 2;
@@ -120,12 +120,13 @@
             this.groupBox2.Controls.Add(this.txtDabasePath);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(3, 220);
+            this.groupBox2.Location = new System.Drawing.Point(9, 233);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(332, 137);
+            this.groupBox2.Size = new System.Drawing.Size(335, 124);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Restore Databsae";
+            this.groupBox2.Visible = false;
             // 
             // btnRBrowse
             // 

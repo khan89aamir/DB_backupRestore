@@ -62,8 +62,9 @@ namespace DB_backupRestore.cs
                 //{
                 //    File.Delete(strBackUpPath + @"\" + DatabaseName + ".bak");
                 //}
+
                 string sqlcmd = "BACKUP database " + DatabaseName + " TO DISK='" + strBackUpPath + @"\" + DatabaseName + ".bak' WITH INIT";
-                
+
                 //added by aamir 26-06-2016
                 //File.Delete(strBackUpPath + @"\" + DatabaseName + ".bak");
                 //end
@@ -82,9 +83,10 @@ namespace DB_backupRestore.cs
                     clsUtility.ShowErrorMessage("Failed to create the backup.", clsUtility.strProjectTitle);
                 }
                 ObjThread.CloseLoadingDialog();
-                //System.Diagnostics.Process.Start("DatabaseBackupService.exe");               
+                //System.Diagnostics.Process.Start("DatabaseBackupService.exe");
+
             }
-            catch
+            catch (Exception ex)
             {
                 WriteBackupLog(DatabaseName, "Backup DATABASE Faild.");
                 ObjThread.CloseLoadingDialog();
@@ -154,14 +156,14 @@ namespace DB_backupRestore.cs
             catch (Exception ex)
             {
                 ObjThread.CloseLoadingDialog();
-                clsUtility.ShowErrorMessage(ex.ToString(),clsUtility.strProjectTitle);
+                clsUtility.ShowErrorMessage(ex.ToString(), clsUtility.strProjectTitle);
             }
         }
 
         private void Database_Maintenance_Load(object sender, EventArgs e)
         {
             DBName = ObjDAL.GetCurrentDBName(true);
-            this.Size = new Size(358, 402);            
+            this.Size = new Size(358, 402);
             CheckAutobackup();
             ObjThread.ShowLoadingDialog(clsUtility.strProjectTitle, "Loading Please Wait...", this);
             Thread th = new Thread(LoadConnection);
@@ -253,7 +255,8 @@ namespace DB_backupRestore.cs
             btnRestore.Enabled = false;
             txtDabasePath.Clear();
 
-        }int inc = 0;
+        }
+        int inc = 0;
         private void button4_Click(object sender, EventArgs e)
         {
             inc++;

@@ -6,7 +6,7 @@
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{824EE64B-48B4-4ABC-A6D6-81B6C442D78A}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DB_backupRestore</RootNamespace>
     <AssemblyName>DB_backupRestore</AssemblyName>
@@ -64,11 +64,11 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CoreApp, Version=3.0.0.2, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreApp_DLLs.3.0.2\lib\CoreApp.dll</HintPath>
+    <Reference Include="CoreApp, Version=3.0.0.9, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\CoreApp_DLLs.3.0.9\lib\CoreApp.dll</HintPath>
     </Reference>
     <Reference Include="CoreSys, Version=1.1.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreApp_DLLs.3.0.2\lib\CoreSys.dll</HintPath>
+      <HintPath>..\packages\CoreApp_DLLs.3.0.9\lib\CoreSys.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">

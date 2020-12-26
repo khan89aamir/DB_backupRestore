@@ -95,6 +95,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDatabaseMaintenance.ar-KW.resx">
+      <DependentUpon>frmDatabaseMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDatabaseMaintenance.resx">
       <DependentUpon>frmDatabaseMaintenance.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\titlebg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titlebg_green.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

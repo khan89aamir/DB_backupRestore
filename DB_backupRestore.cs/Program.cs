@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using System.Runtime.CompilerServices;
+[assembly: SuppressIldasm]
 
 namespace DB_backupRestore.cs
 {

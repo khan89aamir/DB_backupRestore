@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
+using System.Globalization;
 using System.IO;
 using System.Diagnostics;
 using CoreApp;
@@ -16,6 +17,9 @@ namespace DB_backupRestore.cs
     {
         public frmDatabaseMaintenance()
         {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo(User_Lang);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(User_Lang);
+
             InitializeComponent();
         }
 
@@ -28,6 +32,9 @@ namespace DB_backupRestore.cs
         string strBackUpPath = string.Empty;
         string DatabaseName = string.Empty;
         string DBName = string.Empty;
+
+        public static string User_Lang = "en-US";
+        public bool IsNew = false;
 
         public delegate void dAddComboItem(string item);
 
@@ -162,6 +169,16 @@ namespace DB_backupRestore.cs
 
         private void Database_Maintenance_Load(object sender, EventArgs e)
         {
+            if (IsNew)
+            {
+                this.BackgroundImage = DB_backupRestore.Properties.Resources.back_green;
+                pnlTitle.BackgroundImage = DB_backupRestore.Properties.Resources.titlebg_green;
+            }
+            else
+            {
+                this.BackgroundImage = DB_backupRestore.Properties.Resources.back;
+                pnlTitle.BackgroundImage = DB_backupRestore.Properties.Resources.titlebg;
+            }
             DBName = ObjDAL.GetCurrentDBName(true);
             this.Size = new Size(358, 402);
             CheckAutobackup();

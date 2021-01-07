@@ -47,14 +47,14 @@
             this.kryptonHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.groupBox2 = new gGlowBox.gGlowGroupBox();
             this.groupBox3 = new gGlowBox.gGlowGroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtBacupPath = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnAutoBrowse = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtBacupPath = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.grpKrytonHeader = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.flowLayoutPanel1.SuspendLayout();
             this.pnlTitle.SuspendLayout();
@@ -261,63 +261,6 @@
             this.groupBox3.GlowOn = true;
             this.groupBox3.Name = "groupBox3";
             // 
-            // dateTimePicker2
-            // 
-            this.groupBox3.SetEffectType(this.dateTimePicker2, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.groupBox3.SetsGlowColor(this.dateTimePicker2, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker2.sGlowColor"))));
-            this.dateTimePicker2.ShowUpDown = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.groupBox3.SetEffectType(this.dateTimePicker1, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.groupBox3.SetsGlowColor(this.dateTimePicker1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker1.sGlowColor"))));
-            // 
-            // txtBacupPath
-            // 
-            this.txtBacupPath.BackColor = System.Drawing.Color.White;
-            this.groupBox3.SetEffectType(this.txtBacupPath, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            resources.ApplyResources(this.txtBacupPath, "txtBacupPath");
-            this.txtBacupPath.Name = "txtBacupPath";
-            this.txtBacupPath.ReadOnly = true;
-            this.groupBox3.SetsGlowColor(this.txtBacupPath, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("txtBacupPath.sGlowColor"))));
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Name = "label5";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Name = "label4";
-            // 
-            // btnSave
-            // 
-            resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox3.SetEffectType(this.btnSave, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.groupBox3.SetsGlowColor(this.btnSave, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnSave.sGlowColor"))));
-            this.btnSave.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.btnSave.Values.Text = resources.GetString("btnSave.Values.Text");
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Name = "label6";
-            // 
             // btnAutoBrowse
             // 
             resources.ApplyResources(this.btnAutoBrowse, "btnAutoBrowse");
@@ -330,6 +273,64 @@
             this.btnAutoBrowse.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.btnAutoBrowse.Values.Text = resources.GetString("btnAutoBrowse.Values.Text");
             this.btnAutoBrowse.Click += new System.EventHandler(this.btnAutoBrowse_Click);
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Name = "label6";
+            // 
+            // btnSave
+            // 
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupBox3.SetEffectType(this.btnSave, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.groupBox3.SetsGlowColor(this.btnSave, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnSave.sGlowColor"))));
+            this.btnSave.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnSave.Values.Image = global::DB_backupRestore.Properties.Resources.btnSave_Values_Image;
+            this.btnSave.Values.Text = resources.GetString("btnSave.Values.Text");
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Name = "label5";
+            // 
+            // txtBacupPath
+            // 
+            this.txtBacupPath.BackColor = System.Drawing.Color.White;
+            this.groupBox3.SetEffectType(this.txtBacupPath, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            resources.ApplyResources(this.txtBacupPath, "txtBacupPath");
+            this.txtBacupPath.Name = "txtBacupPath";
+            this.txtBacupPath.ReadOnly = true;
+            this.groupBox3.SetsGlowColor(this.txtBacupPath, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("txtBacupPath.sGlowColor"))));
+            // 
+            // dateTimePicker1
+            // 
+            this.groupBox3.SetEffectType(this.dateTimePicker1, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.groupBox3.SetsGlowColor(this.dateTimePicker1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker1.sGlowColor"))));
+            // 
+            // dateTimePicker2
+            // 
+            this.groupBox3.SetEffectType(this.dateTimePicker2, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.groupBox3.SetsGlowColor(this.dateTimePicker2, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker2.sGlowColor"))));
+            this.dateTimePicker2.ShowUpDown = true;
             // 
             // grpKrytonHeader
             // 
@@ -351,7 +352,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::DB_backupRestore.Properties.Resources.back;
+            this.BackgroundImage = global::DB_backupRestore.Properties.Resources.back_green;
             this.Controls.Add(this.kryptonHeaderGroup2);
             this.Controls.Add(this.kryptonHeaderGroup1);
             this.Controls.Add(this.grpKrytonHeader);

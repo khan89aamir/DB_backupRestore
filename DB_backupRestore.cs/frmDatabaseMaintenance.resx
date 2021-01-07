@@ -112,39 +112,24 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cmbBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 44</value>
-  </data>
-  <data name="cmbBackup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 27</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cmbBackup.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cmbBackup.Name" xml:space="preserve">
-    <value>cmbBackup</value>
-  </data>
-  <data name="&gt;&gt;cmbBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbBackup.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;cmbBackup.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnBackup.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 49</value>
+    <value>3, 14</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 19</value>
@@ -159,7 +144,7 @@
     <value>label2</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -167,267 +152,112 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnBackup.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="cmbBackup.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="cmbBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 9</value>
+  </data>
+  <data name="cmbBackup.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        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
+        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
+        AADNAAAACw==
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnBackup.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="cmbBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 27</value>
   </data>
-  <data name="btnBackup.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="cmbBackup.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="btnBackup.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
+  <data name="&gt;&gt;cmbBackup.Name" xml:space="preserve">
+    <value>cmbBackup</value>
   </data>
-  <data name="btnBackup.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 11.25pt</value>
+  <data name="&gt;&gt;cmbBackup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 83</value>
+  <data name="&gt;&gt;cmbBackup.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="btnBackup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 29</value>
-  </data>
-  <data name="btnBackup.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;cmbBackup.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btnBackup.Text" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 11.25pt</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 96</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>287</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>gGlowBox.gGlowGroupBox, gGlowBox, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>kryptonHeaderGroup1.Panel</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnBackup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 48</value>
+  </data>
+  <data name="btnBackup.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
+        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
+        AADNAAAACw==
+</value>
+  </data>
+  <data name="btnBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 29</value>
+  </data>
+  <data name="btnBackup.TabIndex" type="System.Int32, mscorlib">
+    <value>312</value>
+  </data>
+  <data name="btnBackup.Values.Text" xml:space="preserve">
     <value>Backup</value>
   </data>
   <data name="&gt;&gt;btnBackup.Name" xml:space="preserve">
     <value>btnBackup</value>
   </data>
   <data name="&gt;&gt;btnBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="&gt;&gt;btnBackup.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;btnBackup.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 12pt</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 101</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 136</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Backup Database</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btnRBrowse.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="btnRBrowse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnRBrowse.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btnRBrowse.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 11.25pt</value>
-  </data>
-  <data name="btnRBrowse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 18</value>
-  </data>
-  <data name="btnRBrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 29</value>
-  </data>
-  <data name="btnRBrowse.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnRBrowse.Text" xml:space="preserve">
-    <value>Browse</value>
-  </data>
-  <data name="&gt;&gt;btnRBrowse.Name" xml:space="preserve">
-    <value>btnRBrowse</value>
-  </data>
-  <data name="&gt;&gt;btnRBrowse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnRBrowse.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;btnRBrowse.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnRestore.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="btnRestore.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnRestore.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnRestore.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btnRestore.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 11.25pt</value>
-  </data>
-  <data name="btnRestore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 95</value>
-  </data>
-  <data name="btnRestore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 29</value>
-  </data>
-  <data name="btnRestore.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btnRestore.Text" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.Name" xml:space="preserve">
-    <value>btnRestore</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtDabasePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 63</value>
-  </data>
-  <data name="txtDabasePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 26</value>
-  </data>
-  <data name="txtDabasePath.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txtDabasePath.Name" xml:space="preserve">
-    <value>txtDabasePath</value>
-  </data>
-  <data name="&gt;&gt;txtDabasePath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtDabasePath.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;txtDabasePath.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="btnRestore.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 28</value>
+    <value>9, 16</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 19</value>
@@ -442,400 +272,146 @@
     <value>label3</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
-  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnRBrowse.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnRBrowse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>238, 9</value>
+  </data>
+  <data name="btnRBrowse.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
+        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
+        AADNAAAACw==
+</value>
+  </data>
+  <data name="btnRBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 29</value>
+  </data>
+  <data name="btnRBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>310</value>
+  </data>
+  <data name="btnRBrowse.Values.Text" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="&gt;&gt;btnRBrowse.Name" xml:space="preserve">
+    <value>btnRBrowse</value>
+  </data>
+  <data name="&gt;&gt;btnRBrowse.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnRBrowse.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;btnRBrowse.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtDabasePath.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 12pt</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 233</value>
+  <data name="txtDabasePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 46</value>
   </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 124</value>
+  <data name="txtDabasePath.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
+        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
+        AADNAAAACw==
+</value>
   </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtDabasePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 26</value>
+  </data>
+  <data name="txtDabasePath.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtDabasePath.Name" xml:space="preserve">
+    <value>txtDabasePath</value>
+  </data>
+  <data name="&gt;&gt;txtDabasePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDabasePath.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;txtDabasePath.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Restore Databsae</value>
+  <data name="groupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="groupBox2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 116</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>287</value>
   </data>
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>gGlowBox.gGlowGroupBox, gGlowBox, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>kryptonHeaderGroup2.Panel</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="btnAutoBackup.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnAutoBackup.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btnAutoBackup.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 11.25pt</value>
-  </data>
-  <data name="btnAutoBackup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 57</value>
-  </data>
-  <data name="btnAutoBackup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 29</value>
-  </data>
-  <data name="btnAutoBackup.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnAutoBackup.Text" xml:space="preserve">
-    <value>Configure Auto Backup &gt;&gt;</value>
-  </data>
-  <data name="&gt;&gt;btnAutoBackup.Name" xml:space="preserve">
-    <value>btnAutoBackup</value>
-  </data>
-  <data name="&gt;&gt;btnAutoBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAutoBackup.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnAutoBackup.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnAutoBrowse.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="btnAutoBrowse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnAutoBrowse.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btnAutoBrowse.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 11.25pt</value>
-  </data>
-  <data name="btnAutoBrowse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 65</value>
-  </data>
-  <data name="btnAutoBrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 29</value>
-  </data>
-  <data name="btnAutoBrowse.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="btnAutoBrowse.Text" xml:space="preserve">
-    <value>Browse</value>
-  </data>
-  <data name="&gt;&gt;btnAutoBrowse.Name" xml:space="preserve">
-    <value>btnAutoBrowse</value>
-  </data>
-  <data name="&gt;&gt;btnAutoBrowse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAutoBrowse.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;btnAutoBrowse.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="txtBacupPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 33</value>
+  <data name="btnRestore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="txtBacupPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 26</value>
+  <data name="btnRestore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>238, 77</value>
   </data>
-  <data name="txtBacupPath.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;txtBacupPath.Name" xml:space="preserve">
-    <value>txtBacupPath</value>
-  </data>
-  <data name="&gt;&gt;txtBacupPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtBacupPath.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;txtBacupPath.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 32</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 19</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Set Path :</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="dateTimePicker2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="dateTimePicker2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 110</value>
-  </data>
-  <data name="dateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 26</value>
-  </data>
-  <data name="dateTimePicker2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker2.Name" xml:space="preserve">
-    <value>dateTimePicker2</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker2.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="dateTimePicker1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 71</value>
-  </data>
-  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 26</value>
-  </data>
-  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="dateTimePicker1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
-    <value>dateTimePicker1</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnApply.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRestore.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        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
+        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
+        AADNAAAACw==
 </value>
   </data>
-  <data name="btnApply.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="btnRestore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 29</value>
   </data>
-  <data name="btnApply.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="btnRestore.TabIndex" type="System.Int32, mscorlib">
+    <value>311</value>
   </data>
-  <data name="btnApply.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
+  <data name="btnRestore.Values.Text" xml:space="preserve">
+    <value>Restore</value>
   </data>
-  <data name="btnApply.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 11.25pt</value>
+  <data name="&gt;&gt;btnRestore.Name" xml:space="preserve">
+    <value>btnRestore</value>
   </data>
-  <data name="btnApply.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 156</value>
+  <data name="&gt;&gt;btnRestore.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
-  <data name="btnApply.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 29</value>
+  <data name="&gt;&gt;btnRestore.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="btnApply.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;btnRestore.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="btnApply.Text" xml:space="preserve">
-    <value>Apply</value>
-  </data>
-  <data name="&gt;&gt;btnApply.Name" xml:space="preserve">
-    <value>btnApply</value>
-  </data>
-  <data name="&gt;&gt;btnApply.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnApply.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;btnApply.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 117</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 19</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Select Time :</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 75</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 19</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Select Date :</value>
-  </data>
-  <data name="label4.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 12pt</value>
-  </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 101</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>416, 256</value>
-  </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Configure Auto Backup</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
+  <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="lblBackup.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -858,13 +434,16 @@
     <value>lblBackup</value>
   </data>
   <data name="&gt;&gt;lblBackup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblBackup.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;lblBackup.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="flowLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>355, 46</value>
@@ -879,13 +458,13 @@
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="pnlTitle.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -912,7 +491,7 @@
     <value>label7</value>
   </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>pnlTitle</value>
@@ -927,7 +506,7 @@
     <value>0, 0</value>
   </data>
   <data name="pnlTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>771, 37</value>
+    <value>780, 37</value>
   </data>
   <data name="pnlTitle.TabIndex" type="System.Int32, mscorlib">
     <value>114</value>
@@ -936,15 +515,478 @@
     <value>pnlTitle</value>
   </data>
   <data name="&gt;&gt;pnlTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pnlTitle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnlTitle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnAutoBackup.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnAutoBackup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnAutoBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 48</value>
+  </data>
+  <data name="btnAutoBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 29</value>
+  </data>
+  <data name="btnAutoBackup.TabIndex" type="System.Int32, mscorlib">
+    <value>313</value>
+  </data>
+  <data name="btnAutoBackup.Values.Text" xml:space="preserve">
+    <value>Configure Auto Backup &gt;&gt;</value>
+  </data>
+  <data name="&gt;&gt;btnAutoBackup.Name" xml:space="preserve">
+    <value>btnAutoBackup</value>
+  </data>
+  <data name="&gt;&gt;btnAutoBackup.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnAutoBackup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnAutoBackup.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="kryptonHeaderGroup1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="kryptonHeaderGroup1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 92</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup1.Panel.Name" xml:space="preserve">
+    <value>kryptonHeaderGroup1.Panel</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup1.Panel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonGroupPanel, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup1.Panel.Parent" xml:space="preserve">
+    <value>kryptonHeaderGroup1</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup1.Panel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="kryptonHeaderGroup1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 121</value>
+  </data>
+  <data name="kryptonHeaderGroup1.TabIndex" type="System.Int32, mscorlib">
+    <value>330</value>
+  </data>
+  <data name="kryptonHeaderGroup1.ValuesPrimary.Heading" xml:space="preserve">
+    <value>Backup Database</value>
+  </data>
+  <data name="kryptonHeaderGroup1.ValuesPrimary.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup1.Name" xml:space="preserve">
+    <value>kryptonHeaderGroup1</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup1.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="kryptonHeaderGroup2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="kryptonHeaderGroup2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 219</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup2.Panel.Name" xml:space="preserve">
+    <value>kryptonHeaderGroup2.Panel</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup2.Panel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonGroupPanel, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup2.Panel.Parent" xml:space="preserve">
+    <value>kryptonHeaderGroup2</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup2.Panel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="kryptonHeaderGroup2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 141</value>
+  </data>
+  <data name="kryptonHeaderGroup2.TabIndex" type="System.Int32, mscorlib">
+    <value>331</value>
+  </data>
+  <data name="kryptonHeaderGroup2.ValuesPrimary.Heading" xml:space="preserve">
+    <value>Restore Database</value>
+  </data>
+  <data name="kryptonHeaderGroup2.ValuesPrimary.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup2.Name" xml:space="preserve">
+    <value>kryptonHeaderGroup2</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup2.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;kryptonHeaderGroup2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnAutoBrowse.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnAutoBrowse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnAutoBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 53</value>
+  </data>
+  <data name="btnAutoBrowse.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
+        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
+        AADNAAAACw==
+</value>
+  </data>
+  <data name="btnAutoBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 29</value>
+  </data>
+  <data name="btnAutoBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>309</value>
+  </data>
+  <data name="btnAutoBrowse.Values.Text" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="&gt;&gt;btnAutoBrowse.Name" xml:space="preserve">
+    <value>btnAutoBrowse</value>
+  </data>
+  <data name="&gt;&gt;btnAutoBrowse.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnAutoBrowse.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;btnAutoBrowse.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 20</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 19</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Set Path :</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnSave.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 133</value>
+  </data>
+  <data name="btnSave.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
+        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
+        AADNAAAACw==
+</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 29</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>308</value>
+  </data>
+  <data name="btnSave.Values.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 63</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 19</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Select Date :</value>
+  </data>
+  <data name="label4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 105</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 19</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Select Time :</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtBacupPath.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="txtBacupPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 21</value>
+  </data>
+  <data name="txtBacupPath.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
+        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
+        AADNAAAACw==
+</value>
+  </data>
+  <data name="txtBacupPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 26</value>
+  </data>
+  <data name="txtBacupPath.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtBacupPath.Name" xml:space="preserve">
+    <value>txtBacupPath</value>
+  </data>
+  <data name="&gt;&gt;txtBacupPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBacupPath.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;txtBacupPath.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dateTimePicker1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dateTimePicker1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 59</value>
+  </data>
+  <data name="dateTimePicker1.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
+        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
+        AADNAAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 26</value>
+  </data>
+  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="dateTimePicker1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
+    <value>dateTimePicker1</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="dateTimePicker2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dateTimePicker2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="dateTimePicker2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 98</value>
+  </data>
+  <data name="dateTimePicker2.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
+        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
+        AADNAAAACw==
+</value>
+  </data>
+  <data name="dateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 26</value>
+  </data>
+  <data name="dateTimePicker2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker2.Name" xml:space="preserve">
+    <value>dateTimePicker2</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker2.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 231</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>287</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>gGlowBox.gGlowGroupBox, gGlowBox, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>grpKrytonHeader.Panel</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpKrytonHeader.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="grpKrytonHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 104</value>
+  </data>
+  <data name="&gt;&gt;grpKrytonHeader.Panel.Name" xml:space="preserve">
+    <value>grpKrytonHeader.Panel</value>
+  </data>
+  <data name="&gt;&gt;grpKrytonHeader.Panel.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonGroupPanel, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;grpKrytonHeader.Panel.Parent" xml:space="preserve">
+    <value>grpKrytonHeader</value>
+  </data>
+  <data name="&gt;&gt;grpKrytonHeader.Panel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpKrytonHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 256</value>
+  </data>
+  <data name="grpKrytonHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>329</value>
+  </data>
+  <data name="grpKrytonHeader.ValuesPrimary.Heading" xml:space="preserve">
+    <value>Configure Auto Backup</value>
+  </data>
+  <data name="grpKrytonHeader.ValuesPrimary.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;grpKrytonHeader.Name" xml:space="preserve">
+    <value>grpKrytonHeader</value>
+  </data>
+  <data name="&gt;&gt;grpKrytonHeader.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;grpKrytonHeader.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpKrytonHeader.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
@@ -954,7 +996,7 @@
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>771, 363</value>
+    <value>780, 363</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -966,12 +1008,12 @@
     <value>folderBrowserDialog1</value>
   </data>
   <data name="&gt;&gt;folderBrowserDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmDatabaseMaintenance</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>ComponentFactory.Krypton.Toolkit.KryptonForm, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
 </root>

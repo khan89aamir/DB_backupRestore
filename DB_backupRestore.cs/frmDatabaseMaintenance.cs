@@ -10,10 +10,11 @@ using System.Globalization;
 using System.IO;
 using System.Diagnostics;
 using CoreApp;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace DB_backupRestore.cs
 {
-    public partial class frmDatabaseMaintenance : Form
+    public partial class frmDatabaseMaintenance : KryptonForm
     {
         public frmDatabaseMaintenance()
         {
@@ -27,27 +28,16 @@ namespace DB_backupRestore.cs
         clsUtility ObjUtil = new clsUtility();
         clsThreadTask ObjThread = new clsThreadTask();
 
-        Image B_Leave = DB_backupRestore.Properties.Resources.B_click;
-        Image B_Enter = DB_backupRestore.Properties.Resources.B_on;
         string strBackUpPath = string.Empty;
         string DatabaseName = string.Empty;
         string DBName = string.Empty;
+        string strRDatabseName;
+        string strRestorePath;
 
         public static string User_Lang = "en-US";
         public bool IsNew = false;
 
         public delegate void dAddComboItem(string item);
-
-        private void ButtonMouserEnter(object sender, EventArgs e)
-        {
-            Button btn = (Button)sender;
-            btn.BackgroundImage = B_Enter;
-        }
-        private void ButtonMouseLeave(object sender, EventArgs e)
-        {
-            Button btn = (Button)sender;
-            btn.BackgroundImage = B_Leave;
-        }
 
         private void WriteBackupLog(string dbName, string status)
         {
@@ -111,7 +101,7 @@ namespace DB_backupRestore.cs
                 }
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBackup_Click(object sender, EventArgs e)
         {
             folderBrowserDialog1.Description = "Select your folder where database backup will be saved.";
             DialogResult d = folderBrowserDialog1.ShowDialog();
@@ -181,7 +171,9 @@ namespace DB_backupRestore.cs
             }
             DBName = ObjDAL.GetCurrentDBName(true);
             this.Size = new Size(358, 402);
+            
             CheckAutobackup();
+
             ObjThread.ShowLoadingDialog(clsUtility.strProjectTitle, "Loading Please Wait...", this);
             Thread th = new Thread(LoadConnection);
             th.SetApartmentState(ApartmentState.STA);
@@ -191,7 +183,7 @@ namespace DB_backupRestore.cs
         {
             try
             {
-                DataTable dt = ObjDAL.GetData(DBName + ".dbo.BackupConfig", "IsAutoBackup=1", "BackupID");
+                DataTable dt = ObjDAL.GetData(DBName + ".dbo.BackupConfig", "ISNULL(IsAutoBackup,0)=1", "BackupID");
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     flowLayoutPanel1.Visible = true;
@@ -210,13 +202,7 @@ namespace DB_backupRestore.cs
                 clsUtility.ShowErrorMessage(ex.ToString(), clsUtility.strProjectTitle);
             }
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbBackup.SelectedIndex >= 0)
-            {
-                btnBackup.Enabled = true;
-            }
-        }
+
         private void RestoreDataBase()
         {
             try
@@ -246,10 +232,8 @@ namespace DB_backupRestore.cs
             }
             //RESTORE DATABASE database_name FROM backup_device WITH RECOVERY
         }
-        string strRDatabseName;
-        string strRestorePath;
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnRBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog Obj = new OpenFileDialog();
             Obj.Filter = "Database Backup File (*.bak)|*.bak|All files (*.*)|*.*";
@@ -263,7 +247,7 @@ namespace DB_backupRestore.cs
                 txtDabasePath.Text = Obj.FileName;
             }
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRestore_Click(object sender, EventArgs e)
         {
             ObjThread.ShowLoadingDialog(clsUtility.strProjectTitle, "Restoring Please Wait...", this);
             Thread th = new Thread(RestoreDataBase);
@@ -274,7 +258,7 @@ namespace DB_backupRestore.cs
 
         }
         int inc = 0;
-        private void button4_Click(object sender, EventArgs e)
+        private void btnAutoBackup_Click(object sender, EventArgs e)
         {
             inc++;
             if (inc % 2 == 0)
@@ -284,17 +268,17 @@ namespace DB_backupRestore.cs
             }
             else
             {
-                this.Size = new Size(787, 402);
+                this.Size = new Size(796, 402);
                 btnAutoBackup.Text = "Configure Auto Backup <<";
                 dateTimePicker2.Value = DateTime.Now;
                 try
                 {
-                    object p = ObjDAL.ExecuteScalar("select Path from " + DBName + ".dbo.BackupConfig with(nolock) where len(Path)>0 and isnull(IsAutoBackup,0)=1 and BackupID=1");
+                    object p = ObjDAL.ExecuteScalar("SELECT Path FROM " + DBName + ".dbo.BackupConfig WITH(NOLOCK) WHERE len(Path)>0 and ISNULL(IsAutoBackup,0)=1 and BackupID=1");
                     if (Directory.Exists(p.ToString()))
                     {
                         txtBacupPath.Text = p.ToString();
                         dateTimePicker2.Enabled = true;
-                        btnApply.Enabled = true;
+                        btnSave.Enabled = true;
                     }
                 }
                 catch (Exception ex)
@@ -303,7 +287,7 @@ namespace DB_backupRestore.cs
                 }
             }
         }
-        private void button5_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             try
             {
@@ -349,16 +333,16 @@ namespace DB_backupRestore.cs
         }
         private void StartBackupService()
         {
-            if (File.Exists("DatabaseBackupService.exe"))
-            {
-                Process.Start("DatabaseBackupService.exe");
-            }
-            else
-            {
-                WriteBackupLog(DatabaseName, "Failed to start backup service because backup service is not found..");
-            }
+            //if (File.Exists("DatabaseBackupService.exe"))
+            //{
+            //    Process.Start("DatabaseBackupService.exe");
+            //}
+            //else
+            //{
+            //    WriteBackupLog(DatabaseName, "Failed to start backup service because backup service is not found..");
+            //}
         }
-        private void button6_Click(object sender, EventArgs e)
+        private void btnAutoBrowse_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog Obj = new FolderBrowserDialog();
             Obj.Description = "Select your location to save your backup file.";
@@ -368,7 +352,15 @@ namespace DB_backupRestore.cs
                 txtBacupPath.Text = Obj.SelectedPath;
                 dateTimePicker1.Enabled = true;
                 dateTimePicker2.Enabled = true;
-                btnApply.Enabled = true;
+                btnSave.Enabled = true;
+            }
+        }
+
+        private void cmbBackup_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (cmbBackup.SelectedIndex >= 0)
+            {
+                btnBackup.Enabled = true;
             }
         }
     }

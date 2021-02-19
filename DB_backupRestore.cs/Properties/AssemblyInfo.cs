@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DB_backupRestore.cs")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ATech++")]
 [assembly: AssemblyProduct("DB_backupRestore.cs")]
-[assembly: AssemblyCopyright("Copyright © Khansoft 2020")]
+[assembly: AssemblyCopyright("Copyright © ATech++ 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

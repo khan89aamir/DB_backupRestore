@@ -30,49 +30,53 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDatabaseMaintenance));
             this.btnBackup = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.cmbBackup = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.cmbBackup = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.lblbackupDataBase = new System.Windows.Forms.Label();
             this.btnRestore = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnRBrowse = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.txtDabasePath = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtDabasePath = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.lblRestoreDatabase = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.lblBackup = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.pnlTitle = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.picDBImage = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnAutoBackup = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
+            this.kgrpbackupDB = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.groupBox1 = new gGlowBox.gGlowGroupBox();
-            this.kryptonHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
+            this.kgrpRestoreDB = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.groupBox2 = new gGlowBox.gGlowGroupBox();
             this.groupBox3 = new gGlowBox.gGlowGroupBox();
             this.btnAutoBrowse = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblPath = new System.Windows.Forms.Label();
             this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBacupPath = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.grpKrytonHeader = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.txtBacupPath = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.dateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.dateTimePicker2 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.kgrpAutobackup = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
+            this.lblBackup = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBackup)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).BeginInit();
             this.pnlTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).BeginInit();
-            this.kryptonHeaderGroup1.Panel.SuspendLayout();
-            this.kryptonHeaderGroup1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDBImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpbackupDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpbackupDB.Panel)).BeginInit();
+            this.kgrpbackupDB.Panel.SuspendLayout();
+            this.kgrpbackupDB.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2.Panel)).BeginInit();
-            this.kryptonHeaderGroup2.Panel.SuspendLayout();
-            this.kryptonHeaderGroup2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpRestoreDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpRestoreDB.Panel)).BeginInit();
+            this.kgrpRestoreDB.Panel.SuspendLayout();
+            this.kgrpRestoreDB.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grpKrytonHeader)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grpKrytonHeader.Panel)).BeginInit();
-            this.grpKrytonHeader.Panel.SuspendLayout();
-            this.grpKrytonHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpAutobackup)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpAutobackup.Panel)).BeginInit();
+            this.kgrpAutobackup.Panel.SuspendLayout();
+            this.kgrpAutobackup.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBackup
@@ -84,25 +88,31 @@
             this.btnBackup.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.btnBackup.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.groupBox1.SetsGlowColor(this.btnBackup, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnBackup.sGlowColor"))));
-            this.btnBackup.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnBackup.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnBackup.StateCommon.Border.Rounding = 12;
             this.btnBackup.Values.Text = resources.GetString("btnBackup.Values.Text");
             this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
             // 
             // cmbBackup
             // 
             this.cmbBackup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.groupBox1.SetEffectType(this.cmbBackup, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.cmbBackup.DropDownWidth = 204;
             resources.ApplyResources(this.cmbBackup, "cmbBackup");
             this.cmbBackup.FormattingEnabled = true;
             this.cmbBackup.Name = "cmbBackup";
-            this.groupBox1.SetsGlowColor(this.cmbBackup, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("cmbBackup.sGlowColor"))));
+            this.cmbBackup.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cmbBackup.StateCommon.ComboBox.Border.Rounding = 10;
             this.cmbBackup.SelectionChangeCommitted += new System.EventHandler(this.cmbBackup_SelectionChangeCommitted);
             // 
-            // label2
+            // lblbackupDataBase
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.lblbackupDataBase, "lblbackupDataBase");
+            this.lblbackupDataBase.BackColor = System.Drawing.Color.Transparent;
+            this.lblbackupDataBase.Name = "lblbackupDataBase";
             // 
             // btnRestore
             // 
@@ -113,7 +123,10 @@
             this.btnRestore.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.btnRestore.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.groupBox2.SetsGlowColor(this.btnRestore, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnRestore.sGlowColor"))));
-            this.btnRestore.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnRestore.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRestore.StateCommon.Border.Rounding = 12;
             this.btnRestore.Values.Text = resources.GetString("btnRestore.Values.Text");
             this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
             // 
@@ -126,44 +139,46 @@
             this.btnRBrowse.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.btnRBrowse.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.groupBox2.SetsGlowColor(this.btnRBrowse, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnRBrowse.sGlowColor"))));
-            this.btnRBrowse.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnRBrowse.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRBrowse.StateCommon.Border.Rounding = 12;
             this.btnRBrowse.Values.Text = resources.GetString("btnRBrowse.Values.Text");
             this.btnRBrowse.Click += new System.EventHandler(this.btnRBrowse_Click);
             // 
             // txtDabasePath
             // 
             this.txtDabasePath.BackColor = System.Drawing.Color.White;
-            this.groupBox2.SetEffectType(this.txtDabasePath, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             resources.ApplyResources(this.txtDabasePath, "txtDabasePath");
             this.txtDabasePath.Name = "txtDabasePath";
             this.txtDabasePath.ReadOnly = true;
-            this.groupBox2.SetsGlowColor(this.txtDabasePath, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("txtDabasePath.sGlowColor"))));
+            this.txtDabasePath.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtDabasePath.StateCommon.Border.Rounding = 10;
             // 
-            // label3
+            // lblRestoreDatabase
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Name = "label3";
-            // 
-            // lblBackup
-            // 
-            resources.ApplyResources(this.lblBackup, "lblBackup");
-            this.lblBackup.BackColor = System.Drawing.Color.Transparent;
-            this.lblBackup.Name = "lblBackup";
-            // 
-            // flowLayoutPanel1
-            // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Controls.Add(this.lblBackup);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            resources.ApplyResources(this.lblRestoreDatabase, "lblRestoreDatabase");
+            this.lblRestoreDatabase.BackColor = System.Drawing.Color.Transparent;
+            this.lblRestoreDatabase.Name = "lblRestoreDatabase";
             // 
             // pnlTitle
             // 
             this.pnlTitle.BackgroundImage = global::DB_backupRestore.Properties.Resources.titlebg_green;
             resources.ApplyResources(this.pnlTitle, "pnlTitle");
+            this.pnlTitle.Controls.Add(this.picDBImage);
             this.pnlTitle.Controls.Add(this.label7);
             this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.StateCommon.Image = global::DB_backupRestore.Properties.Resources.titlebg_green;
+            // 
+            // picDBImage
+            // 
+            this.picDBImage.BackColor = System.Drawing.Color.Transparent;
+            this.picDBImage.Image = global::DB_backupRestore.Properties.Resources.backupwhite;
+            resources.ApplyResources(this.picDBImage, "picDBImage");
+            this.picDBImage.Name = "picDBImage";
+            this.picDBImage.TabStop = false;
             // 
             // label7
             // 
@@ -179,32 +194,45 @@
             this.btnAutoBackup.Name = "btnAutoBackup";
             this.btnAutoBackup.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.btnAutoBackup.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.btnAutoBackup.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnAutoBackup.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAutoBackup.StateCommon.Border.Rounding = 12;
             this.btnAutoBackup.Values.Text = resources.GetString("btnAutoBackup.Values.Text");
             this.btnAutoBackup.Click += new System.EventHandler(this.btnAutoBackup_Click);
             // 
-            // kryptonHeaderGroup1
+            // kgrpbackupDB
             // 
-            resources.ApplyResources(this.kryptonHeaderGroup1, "kryptonHeaderGroup1");
-            this.kryptonHeaderGroup1.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
+            this.kgrpbackupDB.HeaderVisibleSecondary = false;
+            resources.ApplyResources(this.kgrpbackupDB, "kgrpbackupDB");
+            this.kgrpbackupDB.Name = "kgrpbackupDB";
             // 
-            // kryptonHeaderGroup1.Panel
+            // kgrpbackupDB.Panel
             // 
-            this.kryptonHeaderGroup1.Panel.Controls.Add(this.groupBox1);
-            this.kryptonHeaderGroup1.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonHeaderGroup1.StateNormal.HeaderSecondary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.kryptonHeaderGroup1.ValuesPrimary.Heading = resources.GetString("kryptonHeaderGroup1.ValuesPrimary.Heading");
-            this.kryptonHeaderGroup1.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kryptonHeaderGroup1.ValuesPrimary.Image")));
+            this.kgrpbackupDB.Panel.Controls.Add(this.groupBox1);
+            this.kgrpbackupDB.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kgrpbackupDB.StateCommon.Border.Color1 = System.Drawing.Color.White;
+            this.kgrpbackupDB.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpbackupDB.StateCommon.Border.Rounding = 10;
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Back.Image = global::DB_backupRestore.Properties.Resources.titlebg_green;
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Border.Rounding = 10;
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpbackupDB.ValuesPrimary.Heading = resources.GetString("kgrpbackupDB.ValuesPrimary.Heading");
+            this.kgrpbackupDB.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kgrpbackupDB.ValuesPrimary.Image")));
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.btnBackup);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.lblbackupDataBase);
             this.groupBox1.Controls.Add(this.cmbBackup);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.GlowAmount = 22;
@@ -213,27 +241,39 @@
             this.groupBox1.GlowOn = true;
             this.groupBox1.Name = "groupBox1";
             // 
-            // kryptonHeaderGroup2
+            // kgrpRestoreDB
             // 
-            resources.ApplyResources(this.kryptonHeaderGroup2, "kryptonHeaderGroup2");
-            this.kryptonHeaderGroup2.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup2.Name = "kryptonHeaderGroup2";
+            this.kgrpRestoreDB.HeaderVisibleSecondary = false;
+            resources.ApplyResources(this.kgrpRestoreDB, "kgrpRestoreDB");
+            this.kgrpRestoreDB.Name = "kgrpRestoreDB";
             // 
-            // kryptonHeaderGroup2.Panel
+            // kgrpRestoreDB.Panel
             // 
-            this.kryptonHeaderGroup2.Panel.Controls.Add(this.groupBox2);
-            this.kryptonHeaderGroup2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonHeaderGroup2.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonHeaderGroup2.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonHeaderGroup2.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonHeaderGroup2.ValuesPrimary.Heading = resources.GetString("kryptonHeaderGroup2.ValuesPrimary.Heading");
-            this.kryptonHeaderGroup2.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kryptonHeaderGroup2.ValuesPrimary.Image")));
+            this.kgrpRestoreDB.Panel.Controls.Add(this.groupBox2);
+            this.kgrpRestoreDB.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kgrpRestoreDB.StateCommon.Border.Color1 = System.Drawing.Color.White;
+            this.kgrpRestoreDB.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpRestoreDB.StateCommon.Border.Rounding = 10;
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Image = ((System.Drawing.Image)(resources.GetObject("kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Image")));
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Border.Color1 = System.Drawing.Color.White;
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Border.Rounding = 10;
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpRestoreDB.ValuesPrimary.Heading = resources.GetString("kgrpRestoreDB.ValuesPrimary.Heading");
+            this.kgrpRestoreDB.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kgrpRestoreDB.ValuesPrimary.Image")));
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.btnRestore);
-            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.lblRestoreDatabase);
             this.groupBox2.Controls.Add(this.btnRBrowse);
             this.groupBox2.Controls.Add(this.txtDabasePath);
             resources.ApplyResources(this.groupBox2, "groupBox2");
@@ -247,10 +287,10 @@
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.btnAutoBrowse);
-            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.lblPath);
             this.groupBox3.Controls.Add(this.btnSave);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.lblDate);
+            this.groupBox3.Controls.Add(this.lblTime);
             this.groupBox3.Controls.Add(this.txtBacupPath);
             this.groupBox3.Controls.Add(this.dateTimePicker1);
             this.groupBox3.Controls.Add(this.dateTimePicker2);
@@ -270,15 +310,18 @@
             this.btnAutoBrowse.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.btnAutoBrowse.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.groupBox3.SetsGlowColor(this.btnAutoBrowse, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnAutoBrowse.sGlowColor"))));
-            this.btnAutoBrowse.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnAutoBrowse.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAutoBrowse.StateCommon.Border.Rounding = 12;
             this.btnAutoBrowse.Values.Text = resources.GetString("btnAutoBrowse.Values.Text");
             this.btnAutoBrowse.Click += new System.EventHandler(this.btnAutoBrowse_Click);
             // 
-            // label6
+            // lblPath
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Name = "label6";
+            resources.ApplyResources(this.lblPath, "lblPath");
+            this.lblPath.BackColor = System.Drawing.Color.Transparent;
+            this.lblPath.Name = "lblPath";
             // 
             // btnSave
             // 
@@ -289,31 +332,35 @@
             this.btnSave.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.groupBox3.SetsGlowColor(this.btnSave, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnSave.sGlowColor"))));
-            this.btnSave.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.btnSave.Values.Image = global::DB_backupRestore.Properties.Resources.btnSave_Values_Image;
+            this.btnSave.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSave.StateCommon.Border.Rounding = 12;
             this.btnSave.Values.Text = resources.GetString("btnSave.Values.Text");
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // label4
+            // lblDate
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.lblDate, "lblDate");
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Name = "lblDate";
             // 
-            // label5
+            // lblTime
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Name = "label5";
+            resources.ApplyResources(this.lblTime, "lblTime");
+            this.lblTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime.Name = "lblTime";
             // 
             // txtBacupPath
             // 
             this.txtBacupPath.BackColor = System.Drawing.Color.White;
-            this.groupBox3.SetEffectType(this.txtBacupPath, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             resources.ApplyResources(this.txtBacupPath, "txtBacupPath");
             this.txtBacupPath.Name = "txtBacupPath";
             this.txtBacupPath.ReadOnly = true;
-            this.groupBox3.SetsGlowColor(this.txtBacupPath, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("txtBacupPath.sGlowColor"))));
+            this.txtBacupPath.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtBacupPath.StateCommon.Border.Rounding = 10;
             // 
             // dateTimePicker1
             // 
@@ -322,6 +369,10 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.groupBox3.SetsGlowColor(this.dateTimePicker1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker1.sGlowColor"))));
+            this.dateTimePicker1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dateTimePicker1.StateCommon.Border.Rounding = 10;
             // 
             // dateTimePicker2
             // 
@@ -331,31 +382,60 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.groupBox3.SetsGlowColor(this.dateTimePicker2, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker2.sGlowColor"))));
             this.dateTimePicker2.ShowUpDown = true;
+            this.dateTimePicker2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dateTimePicker2.StateCommon.Border.Rounding = 10;
             // 
-            // grpKrytonHeader
+            // kgrpAutobackup
             // 
-            resources.ApplyResources(this.grpKrytonHeader, "grpKrytonHeader");
-            this.grpKrytonHeader.HeaderVisibleSecondary = false;
-            this.grpKrytonHeader.Name = "grpKrytonHeader";
+            this.kgrpAutobackup.HeaderVisibleSecondary = false;
+            resources.ApplyResources(this.kgrpAutobackup, "kgrpAutobackup");
+            this.kgrpAutobackup.Name = "kgrpAutobackup";
             // 
-            // grpKrytonHeader.Panel
+            // kgrpAutobackup.Panel
             // 
-            this.grpKrytonHeader.Panel.Controls.Add(this.groupBox3);
-            this.grpKrytonHeader.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
-            this.grpKrytonHeader.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
-            this.grpKrytonHeader.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpKrytonHeader.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpKrytonHeader.ValuesPrimary.Heading = resources.GetString("grpKrytonHeader.ValuesPrimary.Heading");
-            this.grpKrytonHeader.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("grpKrytonHeader.ValuesPrimary.Image")));
+            this.kgrpAutobackup.Panel.Controls.Add(this.groupBox3);
+            this.kgrpAutobackup.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kgrpAutobackup.StateCommon.Border.Color1 = System.Drawing.Color.White;
+            this.kgrpAutobackup.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpAutobackup.StateCommon.Border.Rounding = 10;
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Back.Image = ((System.Drawing.Image)(resources.GetObject("kgrpAutobackup.StateCommon.HeaderPrimary.Back.Image")));
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Border.Color1 = System.Drawing.Color.White;
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Border.Rounding = 10;
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpAutobackup.ValuesPrimary.Heading = resources.GetString("kgrpAutobackup.ValuesPrimary.Heading");
+            this.kgrpAutobackup.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kgrpAutobackup.ValuesPrimary.Image")));
+            // 
+            // lblBackup
+            // 
+            resources.ApplyResources(this.lblBackup, "lblBackup");
+            this.lblBackup.BackColor = System.Drawing.Color.Transparent;
+            this.lblBackup.Name = "lblBackup";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Controls.Add(this.lblBackup);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // frmDatabaseMaintenance
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DB_backupRestore.Properties.Resources.back_green;
-            this.Controls.Add(this.kryptonHeaderGroup2);
-            this.Controls.Add(this.kryptonHeaderGroup1);
-            this.Controls.Add(this.grpKrytonHeader);
+            this.Controls.Add(this.kgrpRestoreDB);
+            this.Controls.Add(this.kgrpbackupDB);
+            this.Controls.Add(this.kgrpAutobackup);
             this.Controls.Add(this.btnAutoBackup);
             this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -363,62 +443,71 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmDatabaseMaintenance";
+            this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
             this.ShowIcon = false;
+            this.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Border.Rounding = 5;
             this.Load += new System.EventHandler(this.Database_Maintenance_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBackup)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).EndInit();
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).EndInit();
-            this.kryptonHeaderGroup1.Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).EndInit();
-            this.kryptonHeaderGroup1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picDBImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpbackupDB.Panel)).EndInit();
+            this.kgrpbackupDB.Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpbackupDB)).EndInit();
+            this.kgrpbackupDB.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2.Panel)).EndInit();
-            this.kryptonHeaderGroup2.Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2)).EndInit();
-            this.kryptonHeaderGroup2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpRestoreDB.Panel)).EndInit();
+            this.kgrpRestoreDB.Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpRestoreDB)).EndInit();
+            this.kgrpRestoreDB.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grpKrytonHeader.Panel)).EndInit();
-            this.grpKrytonHeader.Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grpKrytonHeader)).EndInit();
-            this.grpKrytonHeader.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpAutobackup.Panel)).EndInit();
+            this.kgrpAutobackup.Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kgrpAutobackup)).EndInit();
+            this.kgrpAutobackup.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbBackup;
-        private System.Windows.Forms.TextBox txtDabasePath;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblbackupDataBase;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cmbBackup;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtDabasePath;
+        private System.Windows.Forms.Label lblRestoreDatabase;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.Label lblBackup;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel pnlTitle;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel pnlTitle;
         private System.Windows.Forms.Label label7;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnBackup;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnRestore;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnRBrowse;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAutoBackup;
         private gGlowBox.gGlowGroupBox groupBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
+        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kgrpbackupDB;
         private gGlowBox.gGlowGroupBox groupBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup2;
+        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kgrpRestoreDB;
+        private System.Windows.Forms.PictureBox picDBImage;
         private gGlowBox.gGlowGroupBox groupBox3;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAutoBrowse;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblPath;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnSave;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtBacupPath;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup grpKrytonHeader;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblTime;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBacupPath;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dateTimePicker1;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dateTimePicker2;
+        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kgrpAutobackup;
+        private System.Windows.Forms.Label lblBackup;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

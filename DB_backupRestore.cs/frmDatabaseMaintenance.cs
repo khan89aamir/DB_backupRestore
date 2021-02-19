@@ -47,6 +47,94 @@ namespace DB_backupRestore.cs
             ObjUtil.WriteToFile("______________________________________", "backup.log", true);
         }
 
+        private void LoadTheme()
+        {
+            //this.BackgroundImage = TAILORING.Properties.Resources.Background;
+
+            btnAutoBackup.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+            btnAutoBrowse.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+            btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+            btnBackup.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+            btnRBrowse.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+            btnRestore.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+            if (clsUtility.MessageType.SparklePurple == clsUtility._UserMessageType)
+            {
+                Lable_Color(Color.White);
+
+                this.BackgroundImage = null;
+                this.PaletteMode = PaletteMode.SparklePurple;
+                this.BackColor = Color.FromArgb(82, 91, 114);
+
+                pnlTitle.StateCommon.Image = null;
+                pnlTitle.PaletteMode = PaletteMode.SparklePurple;
+
+                kgrpbackupDB.StateCommon.HeaderPrimary.Back.Image = null;
+                kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Image = null;
+                kgrpAutobackup.StateCommon.HeaderPrimary.Back.Image = null;
+
+                kgrpbackupDB.PaletteMode = PaletteMode.SparklePurple;
+                kgrpRestoreDB.PaletteMode = PaletteMode.SparklePurple;
+                kgrpAutobackup.PaletteMode = PaletteMode.SparklePurple;
+
+                btnAutoBackup.PaletteMode = PaletteMode.SparklePurple;
+                btnAutoBrowse.PaletteMode = PaletteMode.SparklePurple;
+                btnBackup.PaletteMode = PaletteMode.SparklePurple;
+                btnRBrowse.PaletteMode = PaletteMode.SparklePurple;
+                btnRestore.PaletteMode = PaletteMode.SparklePurple;
+                btnSave.PaletteMode = PaletteMode.SparklePurple;
+                cmbBackup.PaletteMode = PaletteMode.SparklePurple;
+
+                //btnSave.Values.Image = Properties.Resources.btnSave_Values_Image;
+            }
+            else if (clsUtility.MessageType.Office2010Blue == clsUtility._UserMessageType)
+            {
+                Lable_Color(Color.Black);
+
+                this.BackgroundImage = Properties.Resources.back_green;
+                pnlTitle.StateCommon.Image = Properties.Resources.titlebg_green;
+
+                kgrpbackupDB.StateCommon.HeaderPrimary.Back.Image = Properties.Resources.titlebg_green;
+                kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Image = Properties.Resources.titlebg_green;
+                kgrpAutobackup.StateCommon.HeaderPrimary.Back.Image = Properties.Resources.titlebg_green;
+
+                kgrpbackupDB.PaletteMode = PaletteMode.Office2010Blue;
+                kgrpRestoreDB.PaletteMode = PaletteMode.Office2010Blue;
+                kgrpAutobackup.PaletteMode = PaletteMode.Office2010Blue;
+
+                this.PaletteMode = PaletteMode.Office2010Blue;
+                this.BackColor = Color.White;
+
+                kgrpAutobackup.PaletteMode = PaletteMode.Office2010Blue;
+                cmbBackup.PaletteMode = PaletteMode.Office2010Blue;
+
+                //btnSave.Values.Image = Properties.Resources.btnSave_Values_Image;
+
+                btnAutoBackup.PaletteMode = PaletteMode.Office2007Blue;
+                btnAutoBrowse.PaletteMode = PaletteMode.Office2007Blue;
+                btnBackup.PaletteMode = PaletteMode.Office2007Blue;
+                btnRBrowse.PaletteMode = PaletteMode.Office2007Blue;
+                btnRestore.PaletteMode = PaletteMode.Office2007Blue;
+                btnSave.PaletteMode = PaletteMode.Office2007Blue;
+                cmbBackup.PaletteMode = PaletteMode.Office2010Blue;
+            }
+        }
+
+        private void Lable_Color(Color clr)
+        {
+            lblBackup.ForeColor = clr;
+            lblbackupDataBase.ForeColor = clr;
+            lblDate.ForeColor = clr;
+            lblPath.ForeColor = clr;
+            lblRestoreDatabase.ForeColor = clr;
+            lblTime.ForeColor = clr;
+        }
+
         private void BackUpDatabase()
         {
             try
@@ -140,7 +228,7 @@ namespace DB_backupRestore.cs
                 DataTable dt = ObjDAL.ExecuteSelectStatement("SELECT * FROM sys.databases WHERE name NOT IN('master','model','msdb','tempdb','ReportServer','ReportServerTempDB')");
                 string str = string.Empty;
 
-                if (dt != null)
+                if (ObjUtil.ValidateTable(dt))
                 {
                     for (int i = 0; i < dt.Rows.Count; i++)
                     {
@@ -159,19 +247,14 @@ namespace DB_backupRestore.cs
 
         private void Database_Maintenance_Load(object sender, EventArgs e)
         {
-            if (IsNew)
-            {
-                this.BackgroundImage = DB_backupRestore.Properties.Resources.back_green;
-                pnlTitle.BackgroundImage = DB_backupRestore.Properties.Resources.titlebg_green;
-            }
-            else
-            {
-                this.BackgroundImage = DB_backupRestore.Properties.Resources.back;
-                pnlTitle.BackgroundImage = DB_backupRestore.Properties.Resources.titlebg;
-            }
-            DBName = ObjDAL.GetCurrentDBName(true);
-            this.Size = new Size(358, 402);
-            
+            //clsUtility._UserMessageType = clsUtility.MessageType.SparklePurple;
+            //clsUtility._UserMessageType = clsUtility.MessageType.Office2010Blue;
+
+            //DBName = ObjDAL.GetCurrentDBName(true);
+            LoadTheme();
+
+            this.Size = new Size(364, 446);
+
             CheckAutobackup();
 
             ObjThread.ShowLoadingDialog(clsUtility.strProjectTitle, "Loading Please Wait...", this);
@@ -183,8 +266,8 @@ namespace DB_backupRestore.cs
         {
             try
             {
-                DataTable dt = ObjDAL.GetData(DBName + ".dbo.BackupConfig", "ISNULL(IsAutoBackup,0)=1", "BackupID");
-                if (dt != null && dt.Rows.Count > 0)
+                DataTable dt = ObjDAL.GetData(clsUtility.DBName + ".dbo.BackupConfig", "ISNULL(IsAutoBackup,0)=1", "BackupID");
+                if (ObjUtil.ValidateTable(dt))
                 {
                     flowLayoutPanel1.Visible = true;
                     btnAutoBackup.Visible = true;
@@ -263,17 +346,17 @@ namespace DB_backupRestore.cs
             inc++;
             if (inc % 2 == 0)
             {
-                this.Size = new Size(358, 402);
+                this.Size = new Size(364, 446);
                 btnAutoBackup.Text = "Configure Auto Backup >>";
             }
             else
             {
-                this.Size = new Size(796, 402);
+                this.Size = new Size(801, 446);
                 btnAutoBackup.Text = "Configure Auto Backup <<";
                 dateTimePicker2.Value = DateTime.Now;
                 try
                 {
-                    object p = ObjDAL.ExecuteScalar("SELECT Path FROM " + DBName + ".dbo.BackupConfig WITH(NOLOCK) WHERE len(Path)>0 and ISNULL(IsAutoBackup,0)=1 and BackupID=1");
+                    object p = ObjDAL.ExecuteScalar("SELECT Path FROM " + clsUtility.DBName + ".dbo.BackupConfig WITH(NOLOCK) WHERE LEN(Path)>0 AND ISNULL(IsAutoBackup,0)=1 AND BackupID=1");
                     if (Directory.Exists(p.ToString()))
                     {
                         txtBacupPath.Text = p.ToString();
@@ -294,13 +377,13 @@ namespace DB_backupRestore.cs
                 KillbackupDatabase();//closing auto database backup service
                 if (Directory.Exists(txtBacupPath.Text))
                 {
-                    if (ObjDAL.CountRecords(DBName + ".dbo.BackupConfig  ") > 0)
+                    if (ObjDAL.CountRecords(clsUtility.DBName + ".dbo.BackupConfig  ") > 0)
                     {
                         ObjDAL.UpdateColumnData("Path", SqlDbType.NVarChar, txtBacupPath.Text.Trim());
                         //ObjDAL.UpdateColumnData("Date", SqlDbType.Date, dateTimePicker1.Value);
                         ObjDAL.UpdateColumnData("Date", SqlDbType.Date, dateTimePicker2.Value);
                         ObjDAL.UpdateColumnData("Time", SqlDbType.DateTime, dateTimePicker2.Value);
-                        int a = ObjDAL.UpdateData(DBName + ".dbo.BackupConfig", "BackupID=1");
+                        int a = ObjDAL.UpdateData(clsUtility.DBName + ".dbo.BackupConfig", "BackupID=1");
                         if (a > 0)
                         {
                             clsUtility.ShowInfoMessage("Backup Configure Successfully.", clsUtility.strProjectTitle);
@@ -312,7 +395,7 @@ namespace DB_backupRestore.cs
                         ObjDAL.SetColumnData("Date", SqlDbType.Date, dateTimePicker1.Value);
                         ObjDAL.SetColumnData("Time", SqlDbType.DateTime, dateTimePicker2.Value);
                         ObjDAL.SetColumnData("IsAutoBackup", SqlDbType.Bit, 1);
-                        int a = ObjDAL.InsertData(DBName + ".dbo.BackupConfig", false);
+                        int a = ObjDAL.InsertData(clsUtility.DBName + ".dbo.BackupConfig", false);
                         if (a > 0)
                         {
                             clsUtility.ShowInfoMessage("Backup Configure Successfully.", clsUtility.strProjectTitle);
@@ -325,7 +408,7 @@ namespace DB_backupRestore.cs
                     return;
                 }
                 inc++;
-                this.Size = new Size(364, 401);
+                this.Size = new Size(364, 446);
                 btnAutoBackup.Text = "Configure Auto Backup >>";
                 StartBackupService();
             }

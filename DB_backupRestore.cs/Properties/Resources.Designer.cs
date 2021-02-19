@@ -63,26 +63,6 @@ namespace DB_backupRestore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap B_click {
-            get {
-                object obj = ResourceManager.GetObject("B_click", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap B_on {
-            get {
-                object obj = ResourceManager.GetObject("B_on", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap back {
             get {
                 object obj = ResourceManager.GetObject("back", resourceCulture);
@@ -96,6 +76,26 @@ namespace DB_backupRestore.Properties {
         internal static System.Drawing.Bitmap back_green {
             get {
                 object obj = ResourceManager.GetObject("back_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backupgreen {
+            get {
+                object obj = ResourceManager.GetObject("backupgreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backupwhite {
+            get {
+                object obj = ResourceManager.GetObject("backupwhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -68,11 +68,11 @@
     <Reference Include="ComponentFactory.Krypton.Toolkit">
       <HintPath>..\..\..\..\Tailoring document\Debug\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="CoreApp, Version=3.1.2.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreApp_DLLs.3.1.20\lib\CoreApp.dll</HintPath>
+    <Reference Include="CoreApp, Version=3.1.2.2, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\CoreApp_DLLs.3.1.21\lib\CoreApp.dll</HintPath>
     </Reference>
     <Reference Include="CoreSys, Version=1.1.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreApp_DLLs.3.1.20\lib\CoreSys.dll</HintPath>
+      <HintPath>..\packages\CoreApp_DLLs.3.1.21\lib\CoreSys.dll</HintPath>
     </Reference>
     <Reference Include="gGlowBox">
       <HintPath>..\..\..\..\Tailoring document\Debug\gGlowBox.dll</HintPath>
@@ -161,6 +161,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\titlebg_green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backupgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backupwhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

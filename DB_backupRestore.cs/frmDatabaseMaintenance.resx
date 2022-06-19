@@ -147,7 +147,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblbackupDataBase.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+    <value>kgrpbackupDBGlow</value>
   </data>
   <data name="&gt;&gt;lblbackupDataBase.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -171,33 +171,33 @@
     <value>ComponentFactory.Krypton.Toolkit.KryptonComboBox, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="&gt;&gt;cmbBackup.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+    <value>kgrpbackupDBGlow</value>
   </data>
   <data name="&gt;&gt;cmbBackup.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="kgrpbackupDBGlow.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 11.25pt</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="kgrpbackupDBGlow.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="kgrpbackupDBGlow.Size" type="System.Drawing.Size, System.Drawing">
     <value>329, 87</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="kgrpbackupDBGlow.TabIndex" type="System.Int32, mscorlib">
     <value>287</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;kgrpbackupDBGlow.Name" xml:space="preserve">
+    <value>kgrpbackupDBGlow</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;kgrpbackupDBGlow.Type" xml:space="preserve">
     <value>gGlowBox.gGlowGroupBox, gGlowBox, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;kgrpbackupDBGlow.Parent" xml:space="preserve">
     <value>kgrpbackupDB.Panel</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;kgrpbackupDBGlow.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
@@ -231,13 +231,51 @@
     <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="&gt;&gt;btnBackup.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+    <value>kgrpbackupDBGlow</value>
   </data>
   <data name="&gt;&gt;btnBackup.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btnRBrowse.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="btnRestore.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="btnRestore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRestore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 81</value>
+  </data>
+  <data name="btnRestore.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
+        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
+        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
+        AADNAAAACw==
+</value>
+  </data>
+  <data name="btnRestore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 31</value>
+  </data>
+  <data name="btnRestore.TabIndex" type="System.Int32, mscorlib">
+    <value>311</value>
+  </data>
+  <data name="kryptonButton1.Values.Text" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="&gt;&gt;btnRestore.Name" xml:space="preserve">
+    <value>btnRestore</value>
+  </data>
+  <data name="&gt;&gt;btnRestore.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btnRestore.Parent" xml:space="preserve">
+    <value>kgrpRestoreDBGlow</value>
+  </data>
+  <data name="&gt;&gt;btnRestore.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lblRestoreDatabase.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -264,13 +302,58 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblRestoreDatabase.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>kgrpRestoreDBGlow</value>
   </data>
   <data name="&gt;&gt;lblRestoreDatabase.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnRBrowse.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="txtDabasePath.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="txtDabasePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 46</value>
+  </data>
+  <data name="txtDabasePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 29</value>
+  </data>
+  <data name="txtDabasePath.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtDabasePath.Name" xml:space="preserve">
+    <value>txtDabasePath</value>
+  </data>
+  <data name="&gt;&gt;txtDabasePath.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;txtDabasePath.Parent" xml:space="preserve">
+    <value>kgrpRestoreDBGlow</value>
+  </data>
+  <data name="&gt;&gt;txtDabasePath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="kgrpRestoreDBGlow.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="kgrpRestoreDBGlow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="kgrpRestoreDBGlow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 118</value>
+  </data>
+  <data name="kgrpRestoreDBGlow.TabIndex" type="System.Int32, mscorlib">
+    <value>287</value>
+  </data>
+  <data name="&gt;&gt;kgrpRestoreDBGlow.Name" xml:space="preserve">
+    <value>kgrpRestoreDBGlow</value>
+  </data>
+  <data name="&gt;&gt;kgrpRestoreDBGlow.Type" xml:space="preserve">
+    <value>gGlowBox.gGlowGroupBox, gGlowBox, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;kgrpRestoreDBGlow.Parent" xml:space="preserve">
+    <value>kgrpRestoreDB.Panel</value>
+  </data>
+  <data name="&gt;&gt;kgrpRestoreDBGlow.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnRBrowse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -302,93 +385,10 @@
     <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="&gt;&gt;btnRBrowse.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>kgrpRestoreDBGlow</value>
   </data>
   <data name="&gt;&gt;btnRBrowse.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="txtDabasePath.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 12pt</value>
-  </data>
-  <data name="txtDabasePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 46</value>
-  </data>
-  <data name="txtDabasePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 29</value>
-  </data>
-  <data name="txtDabasePath.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txtDabasePath.Name" xml:space="preserve">
-    <value>txtDabasePath</value>
-  </data>
-  <data name="&gt;&gt;txtDabasePath.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;txtDabasePath.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;txtDabasePath.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 118</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>287</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>gGlowBox.gGlowGroupBox, gGlowBox, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>kgrpRestoreDB.Panel</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnRestore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnRestore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 80</value>
-  </data>
-  <data name="btnRestore.sGlowColor" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAD9nR2xvd0JveCwgVmVyc2lvbj0xLjAuMi4wLCBDdWx0dXJlPW5l
-        dXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJnR2xvd0JveC5nR2xvd0dyb3VwQm94K1Nlcmlh
-        bENvbG9yBQAAAAROYW1lAUEBUgFHAUIBAAAAAAgICAgCAAAABgMAAAAIZmY4NWIzY2T/AAAAhQAAALMA
-        AADNAAAACw==
-</value>
-  </data>
-  <data name="btnRestore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 31</value>
-  </data>
-  <data name="btnRestore.TabIndex" type="System.Int32, mscorlib">
-    <value>311</value>
-  </data>
-  <data name="btnRestore.Values.Text" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.Name" xml:space="preserve">
-    <value>btnRestore</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;btnRestore.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -564,91 +564,6 @@
   <data name="kgrpRestoreDB.Size" type="System.Drawing.Size, System.Drawing">
     <value>337, 152</value>
   </data>
-  <data name="kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEAYABgAAD/4QTiRXhpZgAATU0AKgAAAAgABQESAAMAAAABAAEAAAExAAIAAAAm
-        AAAASgEyAAIAAAAUAAAAcIdpAAQAAAABAAAAhIglAAQAAAABAAAA8AAAAShXaW5kb3dzIFBob3RvIEVk
-        aXRvciAxMC4wLjEwMDExLjE2Mzg0ADIwMjA6MTI6MjMgMTU6NDQ6MzQAAAWQAwACAAAAFAAAAMaQBAAC
-        AAAAFAAAANqSkQACAAAAAzIzAACSkgACAAAAAzIzAACgAQADAAAAAQABAAAAAAAAMjAyMDoxMjoyMyAx
-        NTowNzoxNQAyMDIwOjEyOjIzIDE1OjA3OjE1AAAAAAEACwACAAAAJgAAAQIAAAAAV2luZG93cyBQaG90
-        byBFZGl0b3IgMTAuMC4xMDAxMS4xNjM4NAAABgEDAAMAAAABAAYAAAEaAAUAAAABAAABdgEbAAUAAAAB
-        AAABfgEoAAMAAAABAAIAAAIBAAQAAAABAAABhgICAAQAAAABAAADUwAAAAAAAABgAAAAAQAAAGAAAAAB
-        /9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0
-        Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
-        MjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAkAQADASEAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAA
-        AAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0Kx
-        wRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4
-        eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl
-        5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQD
-        BAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygp
-        KjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOk
-        paanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIR
-        AxEAPwDQzRmtD54M0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoA
-        M0ZoAM0ZoASigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBM0ZoEGaM0AGaM0AG
-        aM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0ANooAKKACigAooAKK
-        ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKK
-        ACigAooAKKAP/9kA/9sAQwADAgIDAgIDAwMDBAMDBAUIBQUEBAUKBwcGCAwKDAwLCgsLDQ4SEA0OEQ4L
-        CxAWEBETFBUVFQwPFxgWFBgSFBUU/9sAQwEDBAQFBAUJBQUJFA0LDRQUFBQUFBQUFBQUFBQUFBQUFBQU
-        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgAhgO7AwEiAAIRAQMRAf/EAB8AAAEFAQEB
-        AQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQci
-        cRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVm
-        Z2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV
-        1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//E
-        ALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDTh
-        JfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKT
-        lJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5
-        +v/aAAwDAQACEQMRAD8A6/dRupm6jdXafjo/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/
-        dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRu
-        pm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6
-        jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQ
-        A/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/d
-        Rupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRup
-        m6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6j
-        dQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA
-        /dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQAlFN3UbqQh1FN3UbqAHUU3dRuoAdRTd1G6gB1
-        FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN
-        3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3U
-        bqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3Ubq
-        AHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAH
-        UU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU
-        3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3d
-        RuoASiiimAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
-        FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
-        FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
-        FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
-        FFFACbqN1NooJHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2
-        igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2ig
-        B26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB2
-        6jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26j
-        dTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdT
-        aKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaK
-        AHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igAopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0A
-        OopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0
-        AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk
-        0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTR
-        k0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuT
-        Rk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopu
-        TRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOop
-        uTRk0AOopuTRk0AOopuTRk0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-        RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-        RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-        RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-        RQAUUUUAFFFFABRRRQAUUUUAMzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiig
-        AzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzR
-        miigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmii
-        gAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAz
-        RmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmi
-        igAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z
-</value>
-  </data>
   <data name="kgrpRestoreDB.TabIndex" type="System.Int32, mscorlib">
     <value>331</value>
   </data>
@@ -703,7 +618,7 @@
     <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="&gt;&gt;btnAutoBrowse.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>kgrpAutobackupGlow</value>
   </data>
   <data name="&gt;&gt;btnAutoBrowse.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -736,7 +651,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblPath.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>kgrpAutobackupGlow</value>
   </data>
   <data name="&gt;&gt;lblPath.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -774,7 +689,7 @@
     <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>kgrpAutobackupGlow</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -810,7 +725,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblDate.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>kgrpAutobackupGlow</value>
   </data>
   <data name="&gt;&gt;lblDate.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -843,33 +758,33 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblTime.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>kgrpAutobackupGlow</value>
   </data>
   <data name="&gt;&gt;lblTime.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="txtBacupPath.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtBackupPath.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 12pt</value>
   </data>
-  <data name="txtBacupPath.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtBackupPath.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 14</value>
   </data>
-  <data name="txtBacupPath.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtBackupPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>282, 29</value>
   </data>
-  <data name="txtBacupPath.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtBackupPath.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;txtBacupPath.Name" xml:space="preserve">
-    <value>txtBacupPath</value>
+  <data name="&gt;&gt;txtBackupPath.Name" xml:space="preserve">
+    <value>txtBackupPath</value>
   </data>
-  <data name="&gt;&gt;txtBacupPath.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtBackupPath.Type" xml:space="preserve">
     <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
-  <data name="&gt;&gt;txtBacupPath.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="&gt;&gt;txtBackupPath.Parent" xml:space="preserve">
+    <value>kgrpAutobackupGlow</value>
   </data>
-  <data name="&gt;&gt;txtBacupPath.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtBackupPath.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="dateTimePicker1.Enabled" type="System.Boolean, mscorlib">
@@ -905,7 +820,7 @@
     <value>ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>kgrpAutobackupGlow</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -940,33 +855,33 @@
     <value>ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="&gt;&gt;dateTimePicker2.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+    <value>kgrpAutobackupGlow</value>
   </data>
   <data name="&gt;&gt;dateTimePicker2.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="groupBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="kgrpAutobackupGlow.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="kgrpAutobackupGlow.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="kgrpAutobackupGlow.Size" type="System.Drawing.Size, System.Drawing">
     <value>408, 245</value>
   </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="kgrpAutobackupGlow.TabIndex" type="System.Int32, mscorlib">
     <value>287</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="&gt;&gt;kgrpAutobackupGlow.Name" xml:space="preserve">
+    <value>kgrpAutobackupGlow</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;kgrpAutobackupGlow.Type" xml:space="preserve">
     <value>gGlowBox.gGlowGroupBox, gGlowBox, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;kgrpAutobackupGlow.Parent" xml:space="preserve">
     <value>kgrpAutobackup.Panel</value>
   </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;kgrpAutobackupGlow.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="kgrpAutobackup.Location" type="System.Drawing.Point, System.Drawing">
@@ -986,91 +901,6 @@
   </data>
   <data name="kgrpAutobackup.Size" type="System.Drawing.Size, System.Drawing">
     <value>416, 279</value>
-  </data>
-  <data name="kgrpAutobackup.StateCommon.HeaderPrimary.Back.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEAYABgAAD/4QTiRXhpZgAATU0AKgAAAAgABQESAAMAAAABAAEAAAExAAIAAAAm
-        AAAASgEyAAIAAAAUAAAAcIdpAAQAAAABAAAAhIglAAQAAAABAAAA8AAAAShXaW5kb3dzIFBob3RvIEVk
-        aXRvciAxMC4wLjEwMDExLjE2Mzg0ADIwMjA6MTI6MjMgMTU6NDQ6MzQAAAWQAwACAAAAFAAAAMaQBAAC
-        AAAAFAAAANqSkQACAAAAAzIzAACSkgACAAAAAzIzAACgAQADAAAAAQABAAAAAAAAMjAyMDoxMjoyMyAx
-        NTowNzoxNQAyMDIwOjEyOjIzIDE1OjA3OjE1AAAAAAEACwACAAAAJgAAAQIAAAAAV2luZG93cyBQaG90
-        byBFZGl0b3IgMTAuMC4xMDAxMS4xNjM4NAAABgEDAAMAAAABAAYAAAEaAAUAAAABAAABdgEbAAUAAAAB
-        AAABfgEoAAMAAAABAAIAAAIBAAQAAAABAAABhgICAAQAAAABAAADUwAAAAAAAABgAAAAAQAAAGAAAAAB
-        /9j/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0
-        Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
-        MjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAkAQADASEAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAA
-        AAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0Kx
-        wRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4
-        eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl
-        5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQD
-        BAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygp
-        KjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOk
-        paanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIR
-        AxEAPwDQzRmtD54M0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoAM0ZoA
-        M0ZoAM0ZoASigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigBM0ZoEGaM0AGaM0AG
-        aM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0AGaM0ANooAKKACigAooAKK
-        ACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKKACigAooAKK
-        ACigAooAKKAP/9kA/9sAQwADAgIDAgIDAwMDBAMDBAUIBQUEBAUKBwcGCAwKDAwLCgsLDQ4SEA0OEQ4L
-        CxAWEBETFBUVFQwPFxgWFBgSFBUU/9sAQwEDBAQFBAUJBQUJFA0LDRQUFBQUFBQUFBQUFBQUFBQUFBQU
-        FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgAhgO7AwEiAAIRAQMRAf/EAB8AAAEFAQEB
-        AQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQci
-        cRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVm
-        Z2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV
-        1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//E
-        ALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDTh
-        JfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKT
-        lJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5
-        +v/aAAwDAQACEQMRAD8A6/dRupm6jdXafjo/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/
-        dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRu
-        pm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6
-        jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQ
-        A/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/d
-        Rupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRup
-        m6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6j
-        dQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQA
-        /dRupm6jdQA/dRupm6jdQA/dRupm6jdQA/dRupm6jdQAlFN3UbqQh1FN3UbqAHUU3dRuoAdRTd1G6gB1
-        FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN
-        3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3U
-        bqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3Ubq
-        AHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAH
-        UU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU
-        3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3dRuoAdRTd1G6gB1FN3UbqAHUU3d
-        RuoASiiimAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
-        FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
-        FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
-        FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
-        FFFACbqN1NooJHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2
-        igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2ig
-        B26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB2
-        6jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26j
-        dTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdT
-        aKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igB26jdTaK
-        AHbqN1NooAduo3U2igB26jdTaKAHbqN1NooAduo3U2igAopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0A
-        OopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0
-        AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk
-        0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTR
-        k0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuT
-        Rk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopu
-        TRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOopuTRk0AOop
-        uTRk0AOopuTRk0AOopuTRk0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-        RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-        RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-        RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
-        RQAUUUUAFFFFABRRRQAUUUUAMzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiig
-        AzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzR
-        miigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmii
-        gAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAz
-        RmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmi
-        igAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAzRmiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-        oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z
-</value>
   </data>
   <data name="kgrpAutobackup.TabIndex" type="System.Int32, mscorlib">
     <value>329</value>
@@ -1146,6 +976,24 @@
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="txtBacupPath.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
+  </data>
+  <data name="txtBacupPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 14</value>
+  </data>
+  <data name="txtBacupPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 29</value>
+  </data>
+  <data name="txtBacupPath.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtBacupPath.Name" xml:space="preserve">
+    <value>txtBacupPath</value>
+  </data>
+  <data name="&gt;&gt;txtBacupPath.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonTextBox, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

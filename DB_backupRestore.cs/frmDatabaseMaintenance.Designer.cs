@@ -32,7 +32,6 @@
             this.btnBackup = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.cmbBackup = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.lblbackupDataBase = new System.Windows.Forms.Label();
-            this.btnRestore = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnRBrowse = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txtDabasePath = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lblRestoreDatabase = new System.Windows.Forms.Label();
@@ -42,21 +41,23 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnAutoBackup = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kgrpbackupDB = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
-            this.groupBox1 = new gGlowBox.gGlowGroupBox();
+            this.kgrpbackupDBGlow = new gGlowBox.gGlowGroupBox();
             this.kgrpRestoreDB = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
-            this.groupBox2 = new gGlowBox.gGlowGroupBox();
-            this.groupBox3 = new gGlowBox.gGlowGroupBox();
+            this.kgrpRestoreDBGlow = new gGlowBox.gGlowGroupBox();
+            this.kgrpAutobackupGlow = new gGlowBox.gGlowGroupBox();
             this.btnAutoBrowse = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lblPath = new System.Windows.Forms.Label();
             this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
-            this.txtBacupPath = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtBackupPath = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.dateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.dateTimePicker2 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.kgrpAutobackup = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.lblBackup = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnRestore = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.txtBacupPath = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBackup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).BeginInit();
             this.pnlTitle.SuspendLayout();
@@ -65,13 +66,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.kgrpbackupDB.Panel)).BeginInit();
             this.kgrpbackupDB.Panel.SuspendLayout();
             this.kgrpbackupDB.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.kgrpbackupDBGlow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgrpRestoreDB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgrpRestoreDB.Panel)).BeginInit();
             this.kgrpRestoreDB.Panel.SuspendLayout();
             this.kgrpRestoreDB.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.kgrpRestoreDBGlow.SuspendLayout();
+            this.kgrpAutobackupGlow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgrpAutobackup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgrpAutobackup.Panel)).BeginInit();
             this.kgrpAutobackup.Panel.SuspendLayout();
@@ -83,14 +84,17 @@
             // 
             resources.ApplyResources(this.btnBackup, "btnBackup");
             this.btnBackup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox1.SetEffectType(this.btnBackup, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.kgrpbackupDBGlow.SetEffectType(this.btnBackup, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnBackup.OverrideFocus.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnBackup.OverrideFocus.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnBackup.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.groupBox1.SetsGlowColor(this.btnBackup, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnBackup.sGlowColor"))));
+            this.kgrpbackupDBGlow.SetsGlowColor(this.btnBackup, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnBackup.sGlowColor"))));
             this.btnBackup.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnBackup.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnBackup.StateCommon.Border.Rounding = 12;
             this.btnBackup.Values.Text = resources.GetString("btnBackup.Values.Text");
             this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
@@ -105,6 +109,7 @@
             this.cmbBackup.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cmbBackup.StateCommon.ComboBox.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.cmbBackup.StateCommon.ComboBox.Border.Rounding = 10;
             this.cmbBackup.SelectionChangeCommitted += new System.EventHandler(this.cmbBackup_SelectionChangeCommitted);
             // 
@@ -114,34 +119,21 @@
             this.lblbackupDataBase.BackColor = System.Drawing.Color.Transparent;
             this.lblbackupDataBase.Name = "lblbackupDataBase";
             // 
-            // btnRestore
-            // 
-            resources.ApplyResources(this.btnRestore, "btnRestore");
-            this.btnRestore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox2.SetEffectType(this.btnRestore, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            this.btnRestore.Name = "btnRestore";
-            this.btnRestore.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
-            this.btnRestore.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.groupBox2.SetsGlowColor(this.btnRestore, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnRestore.sGlowColor"))));
-            this.btnRestore.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnRestore.StateCommon.Border.Rounding = 12;
-            this.btnRestore.Values.Text = resources.GetString("btnRestore.Values.Text");
-            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
-            // 
             // btnRBrowse
             // 
             resources.ApplyResources(this.btnRBrowse, "btnRBrowse");
             this.btnRBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox2.SetEffectType(this.btnRBrowse, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.kgrpRestoreDBGlow.SetEffectType(this.btnRBrowse, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.btnRBrowse.Name = "btnRBrowse";
             this.btnRBrowse.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnRBrowse.OverrideFocus.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnRBrowse.OverrideFocus.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnRBrowse.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.groupBox2.SetsGlowColor(this.btnRBrowse, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnRBrowse.sGlowColor"))));
+            this.kgrpRestoreDBGlow.SetsGlowColor(this.btnRBrowse, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnRBrowse.sGlowColor"))));
             this.btnRBrowse.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRBrowse.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnRBrowse.StateCommon.Border.Rounding = 12;
             this.btnRBrowse.Values.Text = resources.GetString("btnRBrowse.Values.Text");
             this.btnRBrowse.Click += new System.EventHandler(this.btnRBrowse_Click);
@@ -155,6 +147,7 @@
             this.txtDabasePath.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtDabasePath.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.txtDabasePath.StateCommon.Border.Rounding = 10;
             // 
             // lblRestoreDatabase
@@ -170,7 +163,6 @@
             this.pnlTitle.Controls.Add(this.picDBImage);
             this.pnlTitle.Controls.Add(this.label7);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.StateCommon.Image = global::DB_backupRestore.Properties.Resources.titlebg_green;
             // 
             // picDBImage
             // 
@@ -193,10 +185,13 @@
             this.btnAutoBackup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAutoBackup.Name = "btnAutoBackup";
             this.btnAutoBackup.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnAutoBackup.OverrideFocus.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnAutoBackup.OverrideFocus.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnAutoBackup.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnAutoBackup.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAutoBackup.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnAutoBackup.StateCommon.Border.Rounding = 12;
             this.btnAutoBackup.Values.Text = resources.GetString("btnAutoBackup.Values.Text");
             this.btnAutoBackup.Click += new System.EventHandler(this.btnAutoBackup_Click);
@@ -209,37 +204,44 @@
             // 
             // kgrpbackupDB.Panel
             // 
-            this.kgrpbackupDB.Panel.Controls.Add(this.groupBox1);
+            this.kgrpbackupDB.Panel.Controls.Add(this.kgrpbackupDBGlow);
             this.kgrpbackupDB.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kgrpbackupDB.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpbackupDB.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.kgrpbackupDB.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpbackupDB.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpbackupDB.StateCommon.Border.Rounding = 10;
             this.kgrpbackupDB.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kgrpbackupDB.StateCommon.HeaderPrimary.Back.Image = global::DB_backupRestore.Properties.Resources.titlebg_green;
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpbackupDB.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpbackupDB.StateCommon.HeaderPrimary.Border.Rounding = 10;
             this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.LongText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.LongText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kgrpbackupDB.StateCommon.HeaderPrimary.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kgrpbackupDB.ValuesPrimary.Heading = resources.GetString("kgrpbackupDB.ValuesPrimary.Heading");
             this.kgrpbackupDB.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kgrpbackupDB.ValuesPrimary.Image")));
             // 
-            // groupBox1
+            // kgrpbackupDBGlow
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btnBackup);
-            this.groupBox1.Controls.Add(this.lblbackupDataBase);
-            this.groupBox1.Controls.Add(this.cmbBackup);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.GlowAmount = 22;
-            this.groupBox1.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(205)))));
-            this.groupBox1.GlowFeather = 60;
-            this.groupBox1.GlowOn = true;
-            this.groupBox1.Name = "groupBox1";
+            this.kgrpbackupDBGlow.BackColor = System.Drawing.Color.Transparent;
+            this.kgrpbackupDBGlow.Controls.Add(this.btnBackup);
+            this.kgrpbackupDBGlow.Controls.Add(this.lblbackupDataBase);
+            this.kgrpbackupDBGlow.Controls.Add(this.cmbBackup);
+            resources.ApplyResources(this.kgrpbackupDBGlow, "kgrpbackupDBGlow");
+            this.kgrpbackupDBGlow.GlowAmount = 22;
+            this.kgrpbackupDBGlow.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(205)))));
+            this.kgrpbackupDBGlow.GlowFeather = 60;
+            this.kgrpbackupDBGlow.GlowOn = true;
+            this.kgrpbackupDBGlow.Name = "kgrpbackupDBGlow";
             // 
             // kgrpRestoreDB
             // 
@@ -249,70 +251,80 @@
             // 
             // kgrpRestoreDB.Panel
             // 
-            this.kgrpRestoreDB.Panel.Controls.Add(this.groupBox2);
+            this.kgrpRestoreDB.Panel.Controls.Add(this.kgrpRestoreDBGlow);
             this.kgrpRestoreDB.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kgrpRestoreDB.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpRestoreDB.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.kgrpRestoreDB.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpRestoreDB.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpRestoreDB.StateCommon.Border.Rounding = 10;
             this.kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Image = ((System.Drawing.Image)(resources.GetObject("kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Image")));
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpRestoreDB.StateCommon.HeaderPrimary.Border.Color1 = System.Drawing.Color.White;
             this.kgrpRestoreDB.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpRestoreDB.StateCommon.HeaderPrimary.Border.Rounding = 10;
             this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.LongText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.LongText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kgrpRestoreDB.StateCommon.HeaderPrimary.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kgrpRestoreDB.ValuesPrimary.Heading = resources.GetString("kgrpRestoreDB.ValuesPrimary.Heading");
             this.kgrpRestoreDB.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kgrpRestoreDB.ValuesPrimary.Image")));
             // 
-            // groupBox2
+            // kgrpRestoreDBGlow
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.btnRestore);
-            this.groupBox2.Controls.Add(this.lblRestoreDatabase);
-            this.groupBox2.Controls.Add(this.btnRBrowse);
-            this.groupBox2.Controls.Add(this.txtDabasePath);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.GlowAmount = 22;
-            this.groupBox2.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(205)))));
-            this.groupBox2.GlowFeather = 60;
-            this.groupBox2.GlowOn = true;
-            this.groupBox2.Name = "groupBox2";
+            this.kgrpRestoreDBGlow.BackColor = System.Drawing.Color.Transparent;
+            this.kgrpRestoreDBGlow.Controls.Add(this.btnRestore);
+            this.kgrpRestoreDBGlow.Controls.Add(this.lblRestoreDatabase);
+            this.kgrpRestoreDBGlow.Controls.Add(this.btnRBrowse);
+            this.kgrpRestoreDBGlow.Controls.Add(this.txtDabasePath);
+            resources.ApplyResources(this.kgrpRestoreDBGlow, "kgrpRestoreDBGlow");
+            this.kgrpRestoreDBGlow.GlowAmount = 22;
+            this.kgrpRestoreDBGlow.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(205)))));
+            this.kgrpRestoreDBGlow.GlowFeather = 60;
+            this.kgrpRestoreDBGlow.GlowOn = true;
+            this.kgrpRestoreDBGlow.Name = "kgrpRestoreDBGlow";
             // 
-            // groupBox3
+            // kgrpAutobackupGlow
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.btnAutoBrowse);
-            this.groupBox3.Controls.Add(this.lblPath);
-            this.groupBox3.Controls.Add(this.btnSave);
-            this.groupBox3.Controls.Add(this.lblDate);
-            this.groupBox3.Controls.Add(this.lblTime);
-            this.groupBox3.Controls.Add(this.txtBacupPath);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
-            this.groupBox3.Controls.Add(this.dateTimePicker2);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.GlowAmount = 22;
-            this.groupBox3.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(205)))));
-            this.groupBox3.GlowFeather = 60;
-            this.groupBox3.GlowOn = true;
-            this.groupBox3.Name = "groupBox3";
+            this.kgrpAutobackupGlow.BackColor = System.Drawing.Color.Transparent;
+            this.kgrpAutobackupGlow.Controls.Add(this.btnAutoBrowse);
+            this.kgrpAutobackupGlow.Controls.Add(this.lblPath);
+            this.kgrpAutobackupGlow.Controls.Add(this.btnSave);
+            this.kgrpAutobackupGlow.Controls.Add(this.lblDate);
+            this.kgrpAutobackupGlow.Controls.Add(this.lblTime);
+            this.kgrpAutobackupGlow.Controls.Add(this.txtBackupPath);
+            this.kgrpAutobackupGlow.Controls.Add(this.dateTimePicker1);
+            this.kgrpAutobackupGlow.Controls.Add(this.dateTimePicker2);
+            resources.ApplyResources(this.kgrpAutobackupGlow, "kgrpAutobackupGlow");
+            this.kgrpAutobackupGlow.GlowAmount = 22;
+            this.kgrpAutobackupGlow.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(205)))));
+            this.kgrpAutobackupGlow.GlowFeather = 60;
+            this.kgrpAutobackupGlow.GlowOn = true;
+            this.kgrpAutobackupGlow.Name = "kgrpAutobackupGlow";
             // 
             // btnAutoBrowse
             // 
             resources.ApplyResources(this.btnAutoBrowse, "btnAutoBrowse");
             this.btnAutoBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox3.SetEffectType(this.btnAutoBrowse, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.kgrpAutobackupGlow.SetEffectType(this.btnAutoBrowse, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.btnAutoBrowse.Name = "btnAutoBrowse";
             this.btnAutoBrowse.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnAutoBrowse.OverrideFocus.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnAutoBrowse.OverrideFocus.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnAutoBrowse.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.groupBox3.SetsGlowColor(this.btnAutoBrowse, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnAutoBrowse.sGlowColor"))));
+            this.kgrpAutobackupGlow.SetsGlowColor(this.btnAutoBrowse, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnAutoBrowse.sGlowColor"))));
             this.btnAutoBrowse.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnAutoBrowse.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnAutoBrowse.StateCommon.Border.Rounding = 12;
             this.btnAutoBrowse.Values.Text = resources.GetString("btnAutoBrowse.Values.Text");
             this.btnAutoBrowse.Click += new System.EventHandler(this.btnAutoBrowse_Click);
@@ -327,14 +339,17 @@
             // 
             resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox3.SetEffectType(this.btnSave, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.kgrpAutobackupGlow.SetEffectType(this.btnSave, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnSave.OverrideFocus.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnSave.OverrideFocus.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.groupBox3.SetsGlowColor(this.btnSave, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnSave.sGlowColor"))));
+            this.kgrpAutobackupGlow.SetsGlowColor(this.btnSave, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnSave.sGlowColor"))));
             this.btnSave.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSave.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.btnSave.StateCommon.Border.Rounding = 12;
             this.btnSave.Values.Text = resources.GetString("btnSave.Values.Text");
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -351,40 +366,45 @@
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
             this.lblTime.Name = "lblTime";
             // 
-            // txtBacupPath
+            // txtBackupPath
             // 
-            this.txtBacupPath.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.txtBacupPath, "txtBacupPath");
-            this.txtBacupPath.Name = "txtBacupPath";
-            this.txtBacupPath.ReadOnly = true;
-            this.txtBacupPath.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtBackupPath.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.txtBackupPath, "txtBackupPath");
+            this.txtBackupPath.Name = "txtBackupPath";
+            this.txtBackupPath.ReadOnly = true;
+            this.txtBackupPath.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtBacupPath.StateCommon.Border.Rounding = 10;
+            this.txtBackupPath.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.txtBackupPath.StateCommon.Border.Rounding = 10;
             // 
             // dateTimePicker1
             // 
-            this.groupBox3.SetEffectType(this.dateTimePicker1, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.kgrpAutobackupGlow.SetEffectType(this.dateTimePicker1, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.groupBox3.SetsGlowColor(this.dateTimePicker1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker1.sGlowColor"))));
+            this.dateTimePicker1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Global;
+            this.kgrpAutobackupGlow.SetsGlowColor(this.dateTimePicker1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker1.sGlowColor"))));
             this.dateTimePicker1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dateTimePicker1.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.dateTimePicker1.StateCommon.Border.Rounding = 10;
             // 
             // dateTimePicker2
             // 
-            this.groupBox3.SetEffectType(this.dateTimePicker2, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.kgrpAutobackupGlow.SetEffectType(this.dateTimePicker2, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.groupBox3.SetsGlowColor(this.dateTimePicker2, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker2.sGlowColor"))));
+            this.dateTimePicker2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Global;
+            this.kgrpAutobackupGlow.SetsGlowColor(this.dateTimePicker2, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dateTimePicker2.sGlowColor"))));
             this.dateTimePicker2.ShowUpDown = true;
             this.dateTimePicker2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dateTimePicker2.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.dateTimePicker2.StateCommon.Border.Rounding = 10;
             // 
             // kgrpAutobackup
@@ -395,23 +415,30 @@
             // 
             // kgrpAutobackup.Panel
             // 
-            this.kgrpAutobackup.Panel.Controls.Add(this.groupBox3);
+            this.kgrpAutobackup.Panel.Controls.Add(this.kgrpAutobackupGlow);
             this.kgrpAutobackup.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kgrpAutobackup.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpAutobackup.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.kgrpAutobackup.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpAutobackup.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpAutobackup.StateCommon.Border.Rounding = 10;
             this.kgrpAutobackup.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kgrpAutobackup.StateCommon.HeaderPrimary.Back.Image = ((System.Drawing.Image)(resources.GetObject("kgrpAutobackup.StateCommon.HeaderPrimary.Back.Image")));
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpAutobackup.StateCommon.HeaderPrimary.Border.Color1 = System.Drawing.Color.White;
             this.kgrpAutobackup.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kgrpAutobackup.StateCommon.HeaderPrimary.Border.Rounding = 10;
             this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.LongText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.LongText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kgrpAutobackup.StateCommon.HeaderPrimary.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kgrpAutobackup.ValuesPrimary.Heading = resources.GetString("kgrpAutobackup.ValuesPrimary.Heading");
             this.kgrpAutobackup.ValuesPrimary.Image = ((System.Drawing.Image)(resources.GetObject("kgrpAutobackup.ValuesPrimary.Image")));
             // 
@@ -427,6 +454,37 @@
             this.flowLayoutPanel1.Controls.Add(this.lblBackup);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // btnRestore
+            // 
+            resources.ApplyResources(this.btnRestore, "btnRestore");
+            this.btnRestore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.kgrpRestoreDBGlow.SetEffectType(this.btnRestore, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.btnRestore.Name = "btnRestore";
+            this.btnRestore.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 11.25F);
+            this.btnRestore.OverrideFocus.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnRestore.OverrideFocus.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.btnRestore.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.kgrpRestoreDBGlow.SetsGlowColor(this.btnRestore, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnRestore.sGlowColor"))));
+            this.btnRestore.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnRestore.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.btnRestore.StateCommon.Border.Rounding = 12;
+            this.btnRestore.Values.Text = resources.GetString("kryptonButton1.Values.Text");
+            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
+            // 
+            // txtBacupPath
+            // 
+            this.txtBacupPath.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.txtBacupPath, "txtBacupPath");
+            this.txtBacupPath.Name = "txtBacupPath";
+            this.txtBacupPath.ReadOnly = true;
+            this.txtBacupPath.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtBacupPath.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.txtBacupPath.StateCommon.Border.Rounding = 10;
             // 
             // frmDatabaseMaintenance
             // 
@@ -448,6 +506,7 @@
             this.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.StateCommon.Border.Rounding = 5;
             this.Load += new System.EventHandler(this.Database_Maintenance_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cmbBackup)).EndInit();
@@ -459,16 +518,16 @@
             this.kgrpbackupDB.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kgrpbackupDB)).EndInit();
             this.kgrpbackupDB.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.kgrpbackupDBGlow.ResumeLayout(false);
+            this.kgrpbackupDBGlow.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgrpRestoreDB.Panel)).EndInit();
             this.kgrpRestoreDB.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kgrpRestoreDB)).EndInit();
             this.kgrpRestoreDB.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.kgrpRestoreDBGlow.ResumeLayout(false);
+            this.kgrpRestoreDBGlow.PerformLayout();
+            this.kgrpAutobackupGlow.ResumeLayout(false);
+            this.kgrpAutobackupGlow.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgrpAutobackup.Panel)).EndInit();
             this.kgrpAutobackup.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kgrpAutobackup)).EndInit();
@@ -489,25 +548,26 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel pnlTitle;
         private System.Windows.Forms.Label label7;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnBackup;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRestore;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnRBrowse;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAutoBackup;
-        private gGlowBox.gGlowGroupBox groupBox1;
+        private gGlowBox.gGlowGroupBox kgrpbackupDBGlow;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kgrpbackupDB;
-        private gGlowBox.gGlowGroupBox groupBox2;
+        private gGlowBox.gGlowGroupBox kgrpRestoreDBGlow;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kgrpRestoreDB;
         private System.Windows.Forms.PictureBox picDBImage;
-        private gGlowBox.gGlowGroupBox groupBox3;
+        private gGlowBox.gGlowGroupBox kgrpAutobackupGlow;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAutoBrowse;
         private System.Windows.Forms.Label lblPath;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnSave;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblTime;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBacupPath;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBackupPath;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dateTimePicker1;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dateTimePicker2;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kgrpAutobackup;
         private System.Windows.Forms.Label lblBackup;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnRestore;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBacupPath;
     }
 }

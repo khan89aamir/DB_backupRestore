@@ -92,6 +92,86 @@ namespace DB_backupRestore.cs
 
                 //btnSave.Values.Image = Properties.Resources.btnSave_Values_Image;
             }
+            else if (clsUtility.MessageType.BlueTheme == clsUtility._UserMessageType)
+            {
+                Lable_Color(Color.Black);
+
+                //this.BackgroundImage = Properties.Resources.back_green;
+                //pnlTitle.StateCommon.Image = Properties.Resources.titlebg_green;
+                pnlTitle.StateCommon.Color1 = Color.FromArgb(99, 157, 207);
+                pnlTitle.StateCommon.Color2 = Color.FromArgb(99, 157, 207);
+
+                //kgrpbackupDB.StateCommon.HeaderPrimary.Back.Image = Properties.Resources.titlebg_green;
+                //kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Image = Properties.Resources.titlebg_green;
+                //kgrpAutobackup.StateCommon.HeaderPrimary.Back.Image = Properties.Resources.titlebg_green;
+
+                kgrpbackupDB.StateCommon.HeaderPrimary.Back.Color1 = Color.FromArgb(99, 157, 207);
+                kgrpbackupDB.StateCommon.HeaderPrimary.Back.Color2 = Color.FromArgb(99, 157, 207);
+                kgrpbackupDB.StateCommon.Border.Color1 = Color.FromArgb(99, 157, 207);
+                kgrpbackupDB.StateNormal.HeaderPrimary.Back.Color1 = Color.FromArgb(99, 157, 207);
+                kgrpbackupDB.StateCommon.HeaderPrimary.Content.ShortText.Color1 = Color.White;
+                kgrpbackupDBGlow.BackColor = Color.White;
+
+                kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Color1 = Color.FromArgb(99, 157, 207);
+                kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Color2 = Color.FromArgb(99, 157, 207);
+                kgrpRestoreDB.StateCommon.Border.Color1 = Color.FromArgb(99, 157, 207);
+                kgrpRestoreDB.StateNormal.HeaderPrimary.Back.Color1 = Color.FromArgb(99, 157, 207);
+                kgrpRestoreDB.StateCommon.HeaderPrimary.Content.ShortText.Color1 = Color.White;
+                kgrpRestoreDBGlow.BackColor = Color.White;
+
+                kgrpAutobackup.StateCommon.HeaderPrimary.Back.Color1 = Color.FromArgb(99, 157, 207);
+                kgrpAutobackup.StateCommon.HeaderPrimary.Back.Color2 = Color.FromArgb(99, 157, 207);
+                kgrpAutobackup.StateCommon.Border.Color1 = Color.FromArgb(99, 157, 207);
+                kgrpAutobackup.StateNormal.HeaderPrimary.Back.Color1 = Color.FromArgb(99, 157, 207);
+                kgrpAutobackup.StateCommon.HeaderPrimary.Content.ShortText.Color1 = Color.White;
+                kgrpAutobackupGlow.BackColor = Color.White;
+
+                kgrpbackupDB.PaletteMode = PaletteMode.Office2007Blue;
+                kgrpRestoreDB.PaletteMode = PaletteMode.Office2007Blue;
+                kgrpAutobackup.PaletteMode = PaletteMode.Office2007Blue;
+
+
+                //btnSave.Values.Image = Properties.Resources.btnSave_Values_Image;
+
+                btnAutoBackup.PaletteMode = PaletteMode.Office2007Blue;
+                btnAutoBrowse.PaletteMode = PaletteMode.Office2007Blue;
+                btnBackup.PaletteMode = PaletteMode.Office2007Blue;
+                btnRBrowse.PaletteMode = PaletteMode.Office2007Blue;
+                btnRestore.PaletteMode = PaletteMode.Office2007Blue;
+                btnSave.PaletteMode = PaletteMode.Office2007Blue;
+                cmbBackup.PaletteMode = PaletteMode.Office2007Blue;
+            }
+            else if (clsUtility.MessageType.Office2007Blue == clsUtility._UserMessageType)
+            {
+                Lable_Color(Color.Black);
+
+                this.BackgroundImage = Properties.Resources.back_green;
+                pnlTitle.StateCommon.Image = Properties.Resources.titlebg_green;
+
+                kgrpbackupDB.StateCommon.HeaderPrimary.Back.Image = Properties.Resources.titlebg_green;
+                kgrpRestoreDB.StateCommon.HeaderPrimary.Back.Image = Properties.Resources.titlebg_green;
+                kgrpAutobackup.StateCommon.HeaderPrimary.Back.Image = Properties.Resources.titlebg_green;
+
+                kgrpbackupDB.PaletteMode = PaletteMode.Office2007Blue;
+                kgrpRestoreDB.PaletteMode = PaletteMode.Office2007Blue;
+                kgrpAutobackup.PaletteMode = PaletteMode.Office2007Blue;
+
+                this.PaletteMode = PaletteMode.Office2007Blue;
+                this.BackColor = Color.White;
+
+                kgrpAutobackup.PaletteMode = PaletteMode.Office2007Blue;
+                cmbBackup.PaletteMode = PaletteMode.Office2007Blue;
+
+                //btnSave.Values.Image = Properties.Resources.btnSave_Values_Image;
+
+                btnAutoBackup.PaletteMode = PaletteMode.Office2007Blue;
+                btnAutoBrowse.PaletteMode = PaletteMode.Office2007Blue;
+                btnBackup.PaletteMode = PaletteMode.Office2007Blue;
+                btnRBrowse.PaletteMode = PaletteMode.Office2007Blue;
+                btnRestore.PaletteMode = PaletteMode.Office2007Blue;
+                btnSave.PaletteMode = PaletteMode.Office2007Blue;
+                cmbBackup.PaletteMode = PaletteMode.Office2007Blue;
+            }
             else if (clsUtility.MessageType.Office2010Blue == clsUtility._UserMessageType)
             {
                 Lable_Color(Color.Black);
@@ -115,12 +195,12 @@ namespace DB_backupRestore.cs
 
                 //btnSave.Values.Image = Properties.Resources.btnSave_Values_Image;
 
-                btnAutoBackup.PaletteMode = PaletteMode.Office2007Blue;
-                btnAutoBrowse.PaletteMode = PaletteMode.Office2007Blue;
-                btnBackup.PaletteMode = PaletteMode.Office2007Blue;
-                btnRBrowse.PaletteMode = PaletteMode.Office2007Blue;
-                btnRestore.PaletteMode = PaletteMode.Office2007Blue;
-                btnSave.PaletteMode = PaletteMode.Office2007Blue;
+                btnAutoBackup.PaletteMode = PaletteMode.Office2010Blue;
+                btnAutoBrowse.PaletteMode = PaletteMode.Office2010Blue;
+                btnBackup.PaletteMode = PaletteMode.Office2010Blue;
+                btnRBrowse.PaletteMode = PaletteMode.Office2010Blue;
+                btnRestore.PaletteMode = PaletteMode.Office2010Blue;
+                btnSave.PaletteMode = PaletteMode.Office2010Blue;
                 cmbBackup.PaletteMode = PaletteMode.Office2010Blue;
             }
         }
@@ -249,6 +329,8 @@ namespace DB_backupRestore.cs
         {
             //clsUtility._UserMessageType = clsUtility.MessageType.SparklePurple;
             //clsUtility._UserMessageType = clsUtility.MessageType.Office2010Blue;
+            //clsUtility._UserMessageType = clsUtility.MessageType.Office2007Blue;
+            //clsUtility._UserMessageType = clsUtility.MessageType.BlueTheme;
 
             //DBName = ObjDAL.GetCurrentDBName(true);
             LoadTheme();
@@ -357,11 +439,15 @@ namespace DB_backupRestore.cs
                 try
                 {
                     object p = ObjDAL.ExecuteScalar("SELECT Path FROM " + clsUtility.DBName + ".dbo.BackupConfig WITH(NOLOCK) WHERE LEN(Path)>0 AND ISNULL(IsAutoBackup,0)=1 AND BackupID=1");
-                    if (Directory.Exists(p.ToString()))
+                    if (p != null && Directory.Exists(p.ToString()))
                     {
-                        txtBacupPath.Text = p.ToString();
+                        txtBackupPath.Text = p.ToString();
                         dateTimePicker2.Enabled = true;
                         btnSave.Enabled = true;
+                    }
+                    else
+                    {
+                        clsUtility.ShowInfoMessage("No Default backup folder found..");
                     }
                 }
                 catch (Exception ex)
@@ -375,11 +461,11 @@ namespace DB_backupRestore.cs
             try
             {
                 KillbackupDatabase();//closing auto database backup service
-                if (Directory.Exists(txtBacupPath.Text))
+                if (Directory.Exists(txtBackupPath.Text))
                 {
                     if (ObjDAL.CountRecords(clsUtility.DBName + ".dbo.BackupConfig  ") > 0)
                     {
-                        ObjDAL.UpdateColumnData("Path", SqlDbType.NVarChar, txtBacupPath.Text.Trim());
+                        ObjDAL.UpdateColumnData("Path", SqlDbType.NVarChar, txtBackupPath.Text.Trim());
                         //ObjDAL.UpdateColumnData("Date", SqlDbType.Date, dateTimePicker1.Value);
                         ObjDAL.UpdateColumnData("Date", SqlDbType.Date, dateTimePicker2.Value);
                         ObjDAL.UpdateColumnData("Time", SqlDbType.DateTime, dateTimePicker2.Value);
@@ -391,7 +477,7 @@ namespace DB_backupRestore.cs
                     }
                     else
                     {
-                        ObjDAL.SetColumnData("Path", SqlDbType.NVarChar, txtBacupPath.Text.Trim());
+                        ObjDAL.SetColumnData("Path", SqlDbType.NVarChar, txtBackupPath.Text.Trim());
                         ObjDAL.SetColumnData("Date", SqlDbType.Date, dateTimePicker1.Value);
                         ObjDAL.SetColumnData("Time", SqlDbType.DateTime, dateTimePicker2.Value);
                         ObjDAL.SetColumnData("IsAutoBackup", SqlDbType.Bit, 1);
@@ -412,18 +498,21 @@ namespace DB_backupRestore.cs
                 btnAutoBackup.Text = "Configure Auto Backup >>";
                 StartBackupService();
             }
-            catch (Exception ex) { clsUtility.ShowInfoMessage(ex.ToString(), clsUtility.strProjectTitle); }
+            catch (Exception ex)
+            {
+                clsUtility.ShowInfoMessage(ex.ToString(), clsUtility.strProjectTitle);
+            }
         }
         private void StartBackupService()
         {
-            //if (File.Exists("DatabaseBackupService.exe"))
-            //{
-            //    Process.Start("DatabaseBackupService.exe");
-            //}
-            //else
-            //{
-            //    WriteBackupLog(DatabaseName, "Failed to start backup service because backup service is not found..");
-            //}
+            if (File.Exists("DatabaseBackupService.exe"))
+            {
+                Process.Start("DatabaseBackupService.exe");
+            }
+            else
+            {
+                WriteBackupLog(DatabaseName, "Failed to start backup service because backup service is not found..");
+            }
         }
         private void btnAutoBrowse_Click(object sender, EventArgs e)
         {
@@ -432,7 +521,7 @@ namespace DB_backupRestore.cs
             DialogResult d = Obj.ShowDialog();
             if (d == DialogResult.OK)
             {
-                txtBacupPath.Text = Obj.SelectedPath;
+                txtBackupPath.Text = Obj.SelectedPath;
                 dateTimePicker1.Enabled = true;
                 dateTimePicker2.Enabled = true;
                 btnSave.Enabled = true;
